@@ -1,51 +1,64 @@
 ---
 template: about-page
 slug: /about
-title: About Foundation
+title: Apa itu STIFIn?
 ---
 
-Thank you! Now say "nuclear wessels"! No! Don't jump! A sexy mistake. Anyone who laughs is a communist!
 
-A true inspiration for the children. And when we woke up, we had these bodies. Moving along… Do a flip! Michelle, I don't regret this, but I bth rue and lament it.
+Apa itu STIFIn – STIFIn merupakan sebuah konsep yang digunakan untuk mengidentifikasi mesin kecerdasan manusia berdasarkan sistem operasi otak yang dominan dan dapat diketahui dengan memindai sidik jari. Metode STIFIn tersusun dari teori-teori psikologi, neuroscience, dan ilmu sumber daya manusia yang akan membantu kita mengenali dan memahami karakter dan kepribadian setiap manusia. Sesuai dengan namanya, dalam konsep STIFIn yang diperkenalkan oleh Farid Poniman, terdapat 5 mesin kecerdasan, yaitu Sensing, Thinking, Intuiting, Feeling, dan Insting.
 
-![Toys](/assets/vanessa-bucceri-gdirwiyama8-unsplash.jpg "Toys")
+Apa itu Personaliti Genetik STIFIn?
 
-Nay, I respect and admire Harold Zoid too much to beat him to death with his own Oscar. Well, then good news! It's a suppository. Then we'll go with that data file! **I've been there.** _My folks were always on me to groom myself and wear underpants._ What am I, the pope?
+setiap orang memiliki kepribadian yang berbeda dan yang pastinya motivasi yang berbeda juga dengan orang-orang lain nya. Dimana dalam konsep STIFIn Masing-masing dari setiap karakter tersebut dibagi menjadi dua kemudi kecerdasan, yaitu introvert dan ekstrovert, kecuali Insting. Mesin kecerdasan (S, T, I, F, In) yang dikombinasikan dengan kemudi kecerdasan (introvert dan ekstrovert) disebut sebagai personaliti genetik yang terdiri dari Si, Se, Ti, Te, Ii, Ie, Fi, Fe, dan In.
 
-Daddy Bender, we're hungry. We can't compete with Mom! Her company is big and evil! Ours is small and neutral! We're rescuing ya. We'll go deliver this crate like professionals, and then we'll go home.
+Dari personaliti genetik sesorang akan diketahui potensi bakat minat yang dimiliki secara genetik. Dari itu kita bisa mengetahui kepribadian dan pola komunikasi yang tepat bahkan sampai menuntukan profesi atau karir yang sesuai dan nyaman di masa depan.
 
-I didn't ask for a completely reasonable excuse! I asked you to get busy! I never loved you. OK, this has gotta stop. I'm going to remind Fry of his humanity the way only a woman can. With a warning label this big, you know they gotta be fun!
+Srata Genetik STIFIn
 
-1. And from now on you're all named Bender Jr.
-2. Ah, computer dating. It's like pimping, but you rarely have to use the phrase "upside your head."
-3. You wouldn't. Ask anyway!
+Tingkatan faktor genetik yang mempengaruhi kepribadian seseorang. berdasarkan stara genetik stifin tingkatan-tingkatan itu sebagai berikut :
 
-Bender, quit destroying the universe! No! The cat shelter's on to me. Enough about your promiscuous mother, Hermes! We have bigger problems. Fatal. I guess if you want children beaten, you have to do it yourself.
+1. Jenis kelamin
 
-I decline the title of Iron Cook and accept the lesser title of Zinc Saucier, which I just made up. Uhh… also, comes with double prize money. You mean while I'm sleeping in it? I don't want to be rescued.
+Sesuai dengan fitrahnya, jenis kelamin tentu sangat mempengaruhi kecerdasan dan kepribadian yang berbeda antara laki-laki dan perempuan.
 
-- You know the worst thing about being a slave? They make you work, but they don't pay you or let you go.
-- And when we woke up, we had these bodies.
-- Spare me your space age technobabble, Attila the Hun!
+2. Mesin kecerdasan
 
-Hi, I'm a naughty nurse, and I really need someone to talk to. \$9.95 a minute. But, like most politicians, he promised more than he could deliver. I don't know what you did, Fry, but once again, you screwed up! Now all the planets are gonna start cracking wise about our mamas.
+Dibagi menjadi 5 bagian belahan otak, yaitu Sensing (limbik kiri), Thinking (neokorteks kiri), Intuiting (neokorteks kanan), Feeling (limbik kanan), dan Insting (otak bagian tengah).
 
-You mean while I'm sleeping in it? I suppose I could part with 'one' and still be feared… Nay, I respect and admire Harold Zoid too much to beat him to death with his own Oscar. Negative, bossy meat creature!
+3. Kemudi kecerdasan
 
-Oh God, what have I done? I don't 'need' to drink. I can quit anytime I want! Bender! Ship! Stop bickering or I'm going to come back there and change your opinions manually! Wow! A superpowers drug you can just rub onto your skin? You'd think it would be something you'd have to freebase.
+Merupakan lapisan otak yang mengemudikan respon stimuli dari setiap mesin kecerdasan, terdiri dari introvert dengan lapisan dalam berwarna putih pekat yang mengarahkan kecerdasan dari dalam ke luar dan ekstrovert dengan lapisan luar berwarna abu berongga yang mengarahkan kecerdasan dari luar ke dalam. Pada mesin kecerdasan Insting tidak terdapat lapisan yang dominan.
 
-Ask her how her day was. In our darkest hour, we can stand erect, with proud upthrust bosoms. Why did you bring us here? I don't know what you did, Fry, but once again, you screwed up! Now all the planets are gonna start cracking wise about our mamas.
+4. Kapasitas otak Dapat diketahui melalui tes IQ yang menerapkan konsep kecerdasan majemuk, berbeda dengan STIFIn yang menerapkan konsep kecerdasan tunggal dengan kecerdasan lainnya sebagai pendukung.
 
-Good news, everyone! I've taught the toaster to feel love! This opera's as lousy as it is brilliant! Your lyrics lack subtlety. You can't just have your characters announce how they feel. That makes me feel angry!
+5. Golongan darah
 
-Hello Morbo, how's the family? You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Oh Leela! You're the only person I could turn to; you're the only person who ever loved me.
+Ialah faktor genetik yang memberikan pengaruh terhadap respon spontan.
 
-My fellow Earthicans, as I have explained in my book 'Earth in the Balance'', and the much more popular ''Harry Potter and the Balance of Earth', we need to defend our planet against pollution. Also dark wizards. Incidentally, you have a dime up your nose.
+Golongan darah O cenderung seperti mesin kecerdasan Feeling. Golongan darah A cenderung seperti mesin kecerdasan Thinking. Golongan darah AB cenderung seperti mesin kecerdasan Sensing. Golongan darah B cenderung seperti mesin kecerdasan Intuiting. Mesin Kecerdasaan STIFIn
 
-You are the last hope of the universe. You know the worst thing about being a slave? They make you work, but they don't pay you or let you go. I meant 'physically'. Look, perhaps you could let me work for a little food? I could clean the floors or paint a fence, or service you sexually?
+Mesin Kecerdasan STIFIn
 
-Hey, guess what you're accessories to. I feel like I was mauled by Jesus. Why would a robot need to drink? What are their names? Fry! Quit doing the right thing, you jerk! Doomsday device? Ah, now the ball's in Farnsworth's court!
+Setelah memahami posisi atau letak dari masing-masing mesin kecerdasan dalam konsep STIFIn, kini saatnya mengenal karakteristik khas dari setiap mesin kecerdasan tersebut.
 
-I saw you with those two "ladies of the evening" at Elzars. Explain that. Shinier than yours, meatbag. That's the ONLY thing about being a slave. Um, is this the boring, peaceful kind of taking to the streets?
+clay-images-11
 
-Just once I'd like to eat dinner with a celebrity who isn't bound and gagged. Daddy Bender, we're hungry. Kids don't turn rotten just from watching TV. I just want to talk. It has nothing to do with mating. Fry, that doesn't make sense.
+Sensing yang mengandalkan kecerdasan pancaindra, membuatnya menanggapi setiap hal dengan konkrit dan praktis. Memiliki kepribadian rajin dan mempunyai daya ingat serta fisik yang kuat, membuat orang Sensing aktif bergerak yang juga disebabkan oleh hormon kortisol yang tinggi. Bahkan kalau orang Sensing sedang merasa jenuh, cara mengembalikan semangatnya adalah dengan berolahraga atau menjalankan aktivitas fisik lainnya seperti berjalan-jalan.
+
+Karena identik dengan otot dan digabungkan dengan kecerdasan pancaindra, Sensing menyukai pekerjaan yang ulet, gesit, dan berkeringat sehingga ia akan lebih memilih pekerjaan lapangan. Kemistri Sensing adalah harta., Sensing introvert paling hemat karena ia perlu bekerja lebih keras untuk mendapatkannya. Sementara Sensing Extrovert boros dalam keuangan namun ia adalah orang yang dermawan dan tidak ragu mengeluarkan hartanya untuk sedekah atau mentraktir orang lain.
+
+Thinking memiliki julukan sebagai the manager, merupakan tipe pekerja keras, tegas, dan disiplin menjadikan mereka mampu berpikir logis dan objektif. Kemampuannya dalam berpikir memakan energi yang besar sehingga meskipun ia mudah bergerak namun tenaganya lebih banyak diserap oleh pikirannya. Ia juga orang yang cukup kritis dalam banyak hal namun adil dalam setiap mengambil keputusan.
+
+Tipe Thinking introvert yang senang berpikir membuatnya terbiasa belajar dengan metode menalar dan berhitung. Sedangkan pada Thinking ekstrovert kemampuan berpikirnya mengandalkan kecerdasan logika.
+
+Intuiting dikenal sebagai the creator karena memiliki banyak ide kreatif dan daya imajinasi yang tinggi. Sifat yang cenderung perfeksionis dan sangat mementingkan kualitas. Intuiting tergolong tidak mudah diatur, ia menyukai perubahan yang terkonsep karena Intuiting merupakan pembaharu yang melihat peluang ke depan, namun tidak menyadari musuhnya.
+
+Tipe ini memiliki kemistri “kata” yang berupa ide atau gagasan yang perlu dirangkai untuk diwujudkan. Mesin kecerdasan Intuiting cenderung tidak menyukai aktivitas fisik yang mengandalkan kekuatan otot. Sebaliknya, ia lebih memilih menggunakan belahan otak kanan atasnya untuk mengeksplorasi ide-ide kreatif dan inovatif. Kekuatan emosional yang dimiliki Feeling membuatnya memiliki jiwa pemimpin.
+
+Mesin kecerdasan Feeling dengan kemudi kecerdasan introvert menjadikan ia memiliki sifat lebih percaya diri yang tinggi karena didorong dari dalam dirinya dan pada tipe Feeling ekstrovert ia lebih bergantung pada energi yang datang dari luar dirinya membuatnya suka menjadi tokoh atau pemimpin yang berada dibalik layar.
+
+Insting yang mengandalkan kecerdasan naluri membuatnya responsif, mudah beradaptasi, dan memiliki kepedulian sosial yang tinggi. Orang dengan mesin kecerdasan Insting adalah orang yang serba bisa karena sistem operasi otaknya ada dibagian tengah yang menyangga empat belahan otak dengan sama baik.
+
+Kemampuan serba bisa yang dimiliki Insting membuatnya ingin selalu berperan dan memberikan kontribusi bagi lingkungannya. Tipe ini menyukai suasana yang tenang dan damai sehingga ia mampu melihat hikmah secara spiritual yang dapat dirasakan dengan nalurinya.
+
+Dengan mengetahui pertanyaan dari apa itu STIFIn , kita akan mengetahui personaliti genetik seseorang yang memudahkan dalam mencari solusi dari setiap persoalan yang secara lebih spesifik, seperti cara belajar, memilih karir, merencanakan keuangan, memahami karakter pasangan, pola pengasuhan anak, dan lain sebagainya. Jadi, tes STIFIn ini memiliki banyak manfaat untuk diri kita sendiri dan juga untuk orang lain, selain itu tes ini juga memiliki banyak sekali manfaat yang dapat diaplikasikan dan memaksimalkan potensi dalam diri seseorang.

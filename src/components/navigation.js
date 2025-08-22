@@ -18,6 +18,15 @@ const MenuItems = [
     path: "/manfaat",
     title: "Manfaat",
   },
+    {
+    path: "/layanan",
+    title: "Layanan",
+  },
+      {
+    path: "/keunggulan",
+    title: "Keunggulan",
+  },
+  
   {
     path: "/blog",
     title: "Blog",

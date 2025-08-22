@@ -1,11 +1,11 @@
 ---
 template: about-page
 slug: /manfaat
-title: Apa itu STIFIn?
+title: MANFAAT TES STIFIN
+featuredImage: /assets/fredrick-tendong-hvyepjyehdq-unsplash.jpg
 ---
 
 
-<h2> MANFAAT TES STIFIN</h2>
 
 
  

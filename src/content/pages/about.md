@@ -2,6 +2,7 @@
 template: about-page
 slug: /about
 title: Apa itu STIFIn?
+featuredImage: /assets/fredrick-tendong-hvyepjyehdq-unsplash.jpg
 ---
 
 

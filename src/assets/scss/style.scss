@@ -14,12 +14,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+   background-color: #19AC54;
   position: relative;
   padding: 30px 20px;
 }
 .site-navigation {
   ul {
     list-style: none;
+     background-color: #19AC54;
     margin: 0;
     padding: 0;
   }
@@ -338,7 +340,7 @@ article img {
 .site-footer {
   display: flex;
   align-items: center;
-  background: #eee;
+   background-color: #19AC54;
   text-align: center;
   font-size: 14px;
   padding: 20px 0;

@@ -3,9 +3,10 @@ template: blog-post
 slug: /markdown
 date: 2020-05-09T05:53:16.102Z
 title: Tipe Stress Thinking   
-featuredImage: /assets/mike-dorner-sf_1ZDA1YFw-unsplash.jpg
+
 description: CARA MENGELOLA STRESS TIPE THINKING
 ---
+![layanan](/assets/layanan1.jpg)
 
 Dalam perjalanan hidup, stres kerap hadir sebagai bayang-bayang yang sulit dihindari. Akan tetapi, Bukan besar kecilnya tekanan yang menentukan, melainkan strategi kita dalam mengelolanya. Pendekatan STIFIn yang terdiri dari Sensing, Thinking, Intuiting, Feeling, dan Instinct membantu kita menyesuaikan strategi mengatasi stres sesuai dengan karakter individu.
 

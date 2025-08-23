@@ -1,12 +1,14 @@
 {
   "meta": {
-    "title": "Foundation",
-    "titleTemplate": "%s",
-    "description": "A starter to launch your blazing fast personal website and a blog, Built with Gatsby and Netlify CMS. Made with ❤ by Stackrole",
-    "siteUrl": "https://foundation.stackrole.com",
-    "image": "/assets/stackrole.png",
-    "iconimage": "/assets/stackrole.png",
-    "twitterUsername": "@stackrole"
+    "title": "STIFIn",
+    "titleTemplate": "%s | STIFIn",
+    "description": "Website resmi STIFIn – Platform pengembangan diri berbasis personality, untuk membantu Anda mengenal potensi dan meraih kesuksesan.",
+    "siteUrl": "https://stifin.com",
+    "image": "/assets/stifin.png",
+    "iconimage": "/assets/stifin.png",
+    "twitterUsername": "@stifin_id",
+    "themeColor": "#19AC54",
+    "backgroundColor": "#FAD02F"
   },
   "ga": "UA-XXXXXXXXX-X"
 }

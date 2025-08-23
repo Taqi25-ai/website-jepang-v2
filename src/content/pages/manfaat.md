@@ -2,10 +2,10 @@
 template: about-page
 slug: /manfaat
 title: MANFAAT TES STIFIN
-featuredImage: /assets/fredrick-tendong-hvyepjyehdq-unsplash.jpg
+
 ---
 
-
+![layanan](/assets/layanan1.jpg)
 
 
  

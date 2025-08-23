@@ -22,17 +22,25 @@ const PostMaker = ({ data }) => (
       </span>
     </h2>
     <div className="grids col-1 sm-2 lg-3">{data}</div>
-    <Link
-      className="button"
-      to="/blog"
-      sx={{
-        variant: "variants.button",
-      }}
-    >
-      See more
-      <span className="icon -right">
-        <RiArrowRightSLine />
-      </span>
-    </Link>
+<Link
+  className="button"
+  to="/blog"
+  sx={{
+    variant: "variants.button",
+    transition: "0.3s",
+    backgroundColor: "#FFD529", // warna kuning
+    color: "#000", // teks hitam biar kontras, bisa diubah
+    '&:hover': {
+      backgroundColor: "#28a745", // warna hijau saat hover
+      color: "#fff", // teks putih saat hover, bisa diubah
+    },
+  }}
+>
+  See more
+  <span className="icon -right">
+    <RiArrowRightSLine />
+  </span>
+</Link>
+
   </section>
 )

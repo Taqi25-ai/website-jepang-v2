@@ -2,8 +2,10 @@
 template: about-page
 slug: /keunggulan
 title: 3 Keunggulan Tes STIFIn
-featuredImage: /assets/fredrick-tendong-hvyepjyehdq-unsplash.jpg
+
 ---
+![layanan](/assets/layanan1.jpg)
+
 #### berikut adalah 3 alasan kenapa kita semakin yakin dengan tes STIFIn
 
 **SIMPEL**

@@ -220,25 +220,58 @@ const HomePage = ({ data }) => {
             dangerouslySetInnerHTML={{ __html: html }}
           />
           <Link
-            to={frontmatter.cta.ctaLink}
-            className="button"
-            sx={{
-              variant: "variants.button",
-            }}
-          >
-            {frontmatter.cta.ctaText}
-            <span className="icon -right">
-              <RiArrowRightSLine />
-            </span>
-          </Link>
-          <div
-            className="social-icons"
-            sx={{
-              variant: "variants.socialIcons",
-            }}
-          >
-            {sIcons}
-          </div>
+  to={frontmatter.cta.ctaLink}
+  className="button"
+  // sx={{
+  //   bg: "#FFD529",      // 🔵 biru
+  //   color: "#fff",
+  //   px: 3,
+  //   py: 2,
+  //   borderRadius: "8px",
+  //   fontWeight: "bold",
+  //   textDecoration: "none",
+  //   transition: "0.3s",
+  //   "&:hover": {
+  //     bg: "#28a745",   // 🟢 hijau saat hover
+  //     color: "#fff",
+  //   },
+  // }}
+  sx={{
+    variant: "variants.button",
+    transition: "0.3s",
+    backgroundColor: "#FFD529", // warna kuning
+    color: "#000", // teks hitam biar kontras, bisa diubah
+    '&:hover': {
+      backgroundColor: "#28a745", // warna hijau saat hover
+      color: "#fff", // teks putih saat hover, bisa diubah
+    },
+  }}
+>
+  {frontmatter.cta.ctaText}
+  <span className="icon -right">
+    <RiArrowRightSLine />
+  </span>
+</Link>
+
+        <div
+  className="social-icons"
+  sx={{
+    display: "flex",
+    gap: 3,
+    mt: 3,
+    "& a": {
+      fontSize: "28px",
+      color: "#FFD529",   // 🔴 merah default
+      transition: "0.3s",
+      "&:hover": {
+        color: "#ff9900", // 🟠 oranye saat hover
+      },
+    },
+  }}
+>
+  {sIcons}
+</div>
+
         </div>
         <div>
           {Image ? (

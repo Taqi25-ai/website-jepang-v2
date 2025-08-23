@@ -2,9 +2,10 @@
 template: about-page
 slug: /about
 title: Apa itu STIFIn?
-featuredImage: /assets/fredrick-tendong-hvyepjyehdq-unsplash.jpg
+
 ---
 
+![layanan](/assets/apaitustiffin.jpg)
 
 Apa itu STIFIn – STIFIn merupakan sebuah konsep yang digunakan untuk mengidentifikasi mesin kecerdasan manusia berdasarkan sistem operasi otak yang dominan dan dapat diketahui dengan memindai sidik jari. Metode STIFIn tersusun dari teori-teori psikologi, neuroscience, dan ilmu sumber daya manusia yang akan membantu kita mengenali dan memahami karakter dan kepribadian setiap manusia. Sesuai dengan namanya, dalam konsep STIFIn yang diperkenalkan oleh Farid Poniman, terdapat 5 mesin kecerdasan, yaitu Sensing, Thinking, Intuiting, Feeling, dan Insting.
 

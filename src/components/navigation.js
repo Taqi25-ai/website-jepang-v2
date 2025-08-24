@@ -1,34 +1,26 @@
-/** @jsx jsx */
-import { jsx } from "theme-ui"
+import React from "react"
 import { Link } from "gatsby"
-import Theme from "./theme"
+import "./navbar.css"
 
 const Navigation = () => {
   return (
-    <nav
-      className="site-navigation"
-      sx={{
-        display: "flex",
-        alignItems: "center",
-        gap: "20px",
-        color: "#fff",
-      }}
-    >
-      <Link to="/" sx={{ color: "inherit", textDecoration: "none" }}>
-        Home
-      </Link>
-      <Link to="/about" sx={{ color: "inherit", textDecoration: "none" }}>
-        About
-      </Link>
-      <Link to="/blog" sx={{ color: "inherit", textDecoration: "none" }}>
-        Blog
-      </Link>
-      <Link to="/contact" sx={{ color: "inherit", textDecoration: "none" }}>
-        Contact
-      </Link>
+    <nav className="navbar">
+      {/* Logo */}
+      {/* <div className="nav-logo">MyLogo</div> */}
 
-      {/* Toggle Dark/Light Mode */}
-      <Theme />
+      {/* Links */}
+      <ul className="nav-links">
+        <li><Link to="/">Home</Link></li>
+     
+        <li><Link to="/manfaat">Manfaat</Link></li>
+        <li><Link to="/keunggulan">Keunggulan</Link></li>
+        <li><Link to="/layanan">Layanan</Link></li>
+        <li><Link to="/blog">Blog</Link></li>
+        <li><Link to="/contact">Contact</Link></li>
+      </ul>
+
+      {/* Card di kanan */}
+  
     </nav>
   )
 }

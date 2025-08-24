@@ -1,15 +1,17 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import { useStaticQuery, graphql } from "gatsby"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons"
 
 import Header from "./header"
 import Logo from "./logo"
 import Navigation from "./navigation"
-
-import "../assets/scss/style.scss"
 import Footer from "./footer"
 import Theme from "../components/theme"
 import Search from "../components/search"
+
+import "../assets/scss/style.scss"
 
 const query = graphql`
   query LayoutQuery {
@@ -38,12 +40,26 @@ const Layout = ({ children, className }) => {
           </div>
           <Navigation />
         </div>
+
         <div sx={layoutStyle.appearance}>
           <Search searchIndex={siteSearchIndex.index} />
           <Theme />
+
+          {/* ✅ WhatsApp Icon */}
+          <a
+            href="https://wa.me/6281234567890"
+            target="_blank"
+            rel="noopener noreferrer"
+            sx={layoutStyle.whatsapp}
+            aria-label="Chat via WhatsApp"
+          >
+            <FontAwesomeIcon icon={faWhatsapp} />
+          </a>
         </div>
       </Header>
+
       <main className={"container " + (className || "")}>{children}</main>
+
       <Footer />
     </div>
   )
@@ -61,5 +77,14 @@ const layoutStyle = {
     display: "flex",
     alignItems: "center",
     gap: 4,
+  },
+  whatsapp: {
+    color: "#25D366",
+    fontSize: "1.8rem",
+    marginLeft: "1rem",
+    transition: "opacity 0.3s ease",
+    ":hover": {
+      opacity: 0.8,
+    },
   },
 }

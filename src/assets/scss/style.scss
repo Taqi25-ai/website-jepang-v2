@@ -14,14 +14,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-   background-color: #19AC54;
+   background-color: #0047AB;
   position: relative;
   padding: 30px 20px;
 }
 .site-navigation {
   ul {
     list-style: none;
-     background-color: #19AC54;
+     background-color: #0047AB;
     margin: 0;
     padding: 0;
   }
@@ -90,10 +90,24 @@
   }
 }
 .container {
+  width: 100%;
+  max-width: 1200px; // ✅ Lebarkan sedikit dari 900px
   margin: 0 auto;
-  max-width: 1240px;
-  padding: 0 20px;
+  // padding: 0.5rem 0.5rem; // ✅ Tambah padding kiri-kanan untuk kenyamanan
+  font-size: 23px; // ✅ Perbesar ukuran font global
+  line-height: 1.8; // ✅ Buat nyaman dibaca
 }
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1.5rem 1rem; // ✅ Lebih sempit di mobile
+    font-size: 17px; // ✅ Sedikit lebih kecil di HP
+  }
+}
+
+
+
+
 .site-logo {
   font-weight: bold;
   a {
@@ -105,6 +119,7 @@
   }
   @media (max-width: $breakpoint-lg) {
     font-size: 20px;
+    
   }
 }
 .home-banner {
@@ -240,12 +255,21 @@ article img {
   max-width: 100%;
 }
 .blog-post-content {
-  max-width: 70ch;
+  max-width: 100%; // ❌ jangan sempitkan lagi di dalam .container
   margin: 0 auto;
-  padding: 20px;
-  line-height: 1.5;
-  font-size: 20px;
+  font-size: 18px;
+  line-height: 1.9;
+  padding: 0;
+
+
+
+
+  @media (max-width: 768px) {
+    padding: 1.5rem 1rem;
+    font-size: 1rem;
+  }
 }
+
 
 .blog-post {
   .featured-image {
@@ -300,8 +324,18 @@ article img {
 .not-found-page {
   padding: 50px 20px;
   .wrapper {
-    max-width: 768px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 20px; // ✅ Tambah padding agar tidak mepet ke tepi
+    font-size: 23px; // ✅ Ukuran font lebih nyaman dibaca
+    line-height: 1.8;
+  }
+
+  @media (max-width: 768px) {
+    .wrapper {
+      padding: 0 15px; // ✅ Sedikit lebih sempit untuk mobile
+      font-size: 17px;
+    }
   }
 }
 // Contact page
@@ -340,7 +374,7 @@ article img {
 .site-footer {
   display: flex;
   align-items: center;
-   background-color: #19AC54;
+   background-color: #0047AB;
   text-align: center;
   font-size: 14px;
   padding: 20px 0;

@@ -1,0 +1,46 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0047AB; /* cobalt blue */
+  padding: 15px 40px;
+}
+
+/* Logo */
+.nav-logo {
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Menu Links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #ffdd57; /* kuning saat hover */
+}
+
+/* Card di kanan */
+.nav-card {
+  margin-left: auto;  /* supaya nempel ke kanan */
+  background: #19AC54; /* hijau dari gambar kamu */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}

@@ -1,7 +1,7 @@
 ---
 template: about-page
 slug: /manfaat
-title: MANFAAT TES STIFIN
+title: ✨ Manfaat Tes STIFIn 
 
 ---
 
@@ -9,35 +9,29 @@ title: MANFAAT TES STIFIN
 
 
  
-> Mengenali potensi dari karakter dan kepribadian diri
-  
 
-> Meningkatkan motivasi belajar dan semangat bertumbuh
+### 🔎 Pemahaman Diri  
+> - **Mengenali potensi** karakter dan kepribadian diri  
+> - **Meningkatkan rasa percaya diri** terhadap kemampuan yang dimiliki  
+> - Membantu lebih fokus pada **kelebihan dan kehebatan diri**  
 
-> Mengoptimalkan potensi bakat yang akan di tingkatkan
+### 📚 Pendidikan & Belajar  
+> - **Meningkatkan motivasi belajar** dan semangat bertumbuh  
+> - Menentukan **jurusan sekolah/kuliah** sesuai potensi  
+> - Mengoptimalkan potensi bakat yang akan dikembangkan  
 
-> Meningkatkan rasa percaya diri akan kemampuan yang dimiliki
+### 👨‍👩‍👧 Hubungan & Keluarga  
+> - Menentukan **pasangan yang ideal** untuk keluarga bahagia  
+> - Membentuk pola **harmonis** antar anggota keluarga/organisasi  
+> - **Membangun komunikasi** yang tepat di lingkungan diri  
 
-> Membantu lebih fokus pada kelebihan dan kehebatan diri
+### 💼 Karir & Bisnis  
+> - Menentukan **karir/profesi** sesuai potensi diri  
+> - Menentukan **bisnis dan rekan bisnis** yang tepat  
+> - Mengaplikasikan potensi di berbagai **bidang karir**  
 
-> Menentukan jurusan sekolah / kuliah sesuai potensi yang di miliki
-
-> Membangun komunikasi yang tepat di lingkungan diri
-
-> Menentukan pasangan yang idel dan menjadikan keluarga yang bahagia
-
-> Membangun pola harmonis sirkulasi antar anggota keluarga / organisasi
-
-> Menentukan karir dan profesi sesuai dengan potensi yang di miliki
-
-> Menentukan bisnis dan rekan bisnis yang tepat sesuai potensi
-
-> Meningkatkan pola komunikasi terhadap lingkungan
-
-> Bertindak lebih bijaksana respon orang lain terhadap kita
-
-> Bisa kolaborasi dan saling melengkapi potensi yang di miliki
-
-> Bisa menentukan pengambilan keputusan yang tepat dan prioritas
-
-> Mampu mengaplikasikan potensi di berbagai bidang karir
+### 🌍 Sosial & Lingkungan  
+> - Meningkatkan **pola komunikasi** terhadap lingkungan  
+> - Bertindak lebih **bijaksana** dalam merespon orang lain  
+> - Bisa **berkolaborasi** dan saling melengkapi potensi  
+> - Membantu **pengambilan keputusan** yang tepat dan prioritas  

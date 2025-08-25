@@ -80,6 +80,10 @@ const Contact = ({ data }) => {
               }}
               type="submit"
             >
+              <a
+  href="mailto:satrioareta55@gmail.com?subject=Kirim Pesan&body=Halo, saya ingin menghubungi Anda."
+  className="button"
+></a>
               Send Message{" "}
               <span className="icon -right">
                 <RiSendPlane2Line />

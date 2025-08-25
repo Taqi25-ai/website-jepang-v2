@@ -1,7 +1,7 @@
 ---
 template: index-page
 slug: /
-title: Apa Itu STIFFIn?
+title: Apa Itu STIFIn?
 tagline: ""
 featuredImage: /assets/apaitustiffin.jpg
 cta:

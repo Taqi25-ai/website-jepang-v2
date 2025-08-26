@@ -32,6 +32,12 @@ const SEO = ({ title, description, image, article }) => {
       <link rel="alternate" href={seo.url} hreflang="x-default" />
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
+        <meta
+    name="keywords"
+    content="Stiffin, Stiffin Project, Stiffin Website, Stiffin Gatsby, Stiffin Blog, Stiffin SEO, Web Development, React, GatsbyJS, Frontend Developer, Website Cepat, Optimasi SEO, 3 Keunggulan Tes STIFIn, LAYANAN KAMI, Manfaat Tes STIFIn,
+              anaktipesensing, ekstrovert, feelingextrovert, feelingintrovert, intuitingekstrovert, sensingintrovert, stressthinking, THINKING-EKSTROVERT, THINKING-INTROVERT, TrustIssue, Apa itu stifin, tentang stiffin, artikel stifin, blog
+              stifin, tes stifin, metode stifin, personality stifin, karakter stifin, tes kepribadian stifin, tes bakat stifin, stifin indonesia, stifin test, stifin method, stifin coach, stifin personalitas, stifin motivation, stifin mindset, komunitas stifin, stifin life, stifin online, kepribadian stifin, bakat stifin, tes karakter stifin"
+  />
       <meta
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"

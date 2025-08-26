@@ -203,7 +203,12 @@ const HomePage = ({ data }) => {
   })
   return (
     <Layout>
-      <Seo />
+      <Seo 
+  title="STIFIn - Tes Kepribadian & Potensi Diri" 
+  description="Kenali potensi diri Anda dengan Tes STIFIn. Metode personality yang akurat untuk pengembangan diri, karier, dan kesuksesan hidup."
+  keywords="Tes STIFIn, Metode STIFIn, Personality Test Indonesia, Tes Kepribadian STIFIn, Tes Bakat STIFIn, STIFIn Online, Karakter STIFIn, STIFIn Coach, STIFIn Blog"
+/>
+
       <div className="home-banner grids col-1 sm-2">
         <div>
           <h1 className="title">{frontmatter.title}</h1>

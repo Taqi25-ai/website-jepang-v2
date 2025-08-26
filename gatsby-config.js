@@ -96,7 +96,7 @@ module.exports = {
     },
     `gatsby-plugin-sitemap`,
 {
-  resolve: `gatsby-plugin-manifest`,
+  resolve: `gatsby-plugin-manifest`, 
   options: {
     name: `STIFIn`,
     short_name: `STIFIn`,

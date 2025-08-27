@@ -4,7 +4,7 @@ slug: /about
 title: Apa itu STIFIn?
 
 ---
-![layanan](/assets/apaitustiffin.jpg)
+![layanan](/assets/apaitustifinn.png)
 
 # Apa itu STIFIn?  
 **STIFIn** merupakan sebuah konsep untuk mengidentifikasi mesin kecerdasan manusia berdasarkan sistem operasi otak yang dominan. Hal ini dapat diketahui dengan memindai sidik jari.  
@@ -72,7 +72,7 @@ Faktor genetik yang memengaruhi kepribadian seseorang terbagi dalam beberapa tin
 
 Setelah mengetahui letak setiap mesin kecerdasan, berikut karakteristik khas masing-masing:  
 
-![layanan](/assets/apaitustifinn.png)
+![layanan](/assets/mesinstifin.jpg)
 
 ### 1. Sensing  
 - Mengandalkan kecerdasan pancaindra.  

@@ -3,7 +3,7 @@ template: index-page
 slug: /
 title: Apa Itu STIFIn?
 tagline: ""
-featuredImage: /assets/apaitustiffin.jpg
+featuredImage: /assets/apaitustifinn.png
 cta:
   ctaText: See more
   ctaLink: /about

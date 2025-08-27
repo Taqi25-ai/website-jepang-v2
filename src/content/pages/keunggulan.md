@@ -4,7 +4,7 @@ slug: /keunggulan
 title: 3 Keunggulan Tes STIFIn
 
 ---
-![layanan](/assets/layanan1.jpg)
+![keunggulan](/assets/keungulan.jpg)
 
 #### berikut adalah 3 alasan kenapa kita semakin yakin dengan tes STIFIn
 

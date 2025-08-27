@@ -72,7 +72,7 @@ Faktor genetik yang memengaruhi kepribadian seseorang terbagi dalam beberapa tin
 
 Setelah mengetahui letak setiap mesin kecerdasan, berikut karakteristik khas masing-masing:  
 
-![layanan](/assets/apaitustiffin.jpg)
+![layanan](/assets/apaitustifinn.png)
 
 ### 1. Sensing  
 - Mengandalkan kecerdasan pancaindra.  

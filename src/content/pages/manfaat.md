@@ -5,7 +5,7 @@ title: ✨ Manfaat Tes STIFIn
 
 ---
 
-![layanan](/assets/layanan1.jpg)
+![manfaat](/assets/manfaatstif.png)
 
 
  

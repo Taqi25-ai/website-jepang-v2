@@ -1,28 +1,33 @@
-import React from "react"
-import { Link } from "gatsby"
+import React, { useState } from "react"
 import "./navbar.css"
 
-const Navigation = () => {
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false)
+
   return (
     <nav className="navbar">
-      {/* Logo */}
-      {/* <div className="nav-logo">MyLogo</div> */}
+      <a href="/" className="logo">STIFIn</a>
 
-      {/* Links */}
-      <ul className="nav-links">
-        <li><Link to="/">Home</Link></li>
-     
-        <li><Link to="/manfaat">Manfaat</Link></li>
-        <li><Link to="/keunggulan">Keunggulan</Link></li>
-        <li><Link to="/layanan">Layanan</Link></li>
-        <li><Link to="/blog">Blog</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
+      <div className="menu-toggle" onClick={() => setIsOpen(!isOpen)}>
+        ☰
+      </div>
+
+      <ul className={isOpen ? "show" : ""}>
+        <li><a href="/" className="active">Home</a></li>
+        <li><a href="/manfaat">Manfaat</a></li>
+        <li><a href="/keunggulan">Keunggulan</a></li>
+        <li><a href="/layanan">Layanan</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/contact">Contact</a></li>
       </ul>
 
-      {/* Card di kanan */}
-  
+      <div className="nav-icons">
+        <i className="ri-search-line"></i>
+        <i className="ri-moon-line"></i>
+        <i className="ri-whatsapp-line"></i>
+      </div>
     </nav>
   )
 }
 
-export default Navigation
+export default Navbar

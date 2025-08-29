@@ -1,47 +1,122 @@
+/* ====== NAVBAR STIFIn ====== */
 .navbar {
+  width: 100%;
+  background: #0056D2; /* Biru utama STIFIn */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #0047AB; /* cobalt blue */
-  padding: 15px 40px;
-  border-radius: 60px;
+  padding: 12px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 /* Logo */
-.nav-logo {
-  font-size: 35px;
-  font-weight: bold;
-  color: white;
+.navbar .logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
 }
 
-/* Menu Links */
-.nav-links {
-  display: flex;
+.navbar .logo:hover {
+  color: #FFD529; /* Aksen kuning */
+}
+
+/* Menu List */
+.navbar ul {
   list-style: none;
-  gap: 40px;
+  display: flex;
   margin: 0;
   padding: 0;
 }
 
-.nav-links li a {
-  color: white;
+.navbar ul li {
+  margin: 0 8px;
+}
+
+.navbar ul li a {
+  display: block;
   text-decoration: none;
-  font-weight: 800;
-  font-size: 20px;
-  transition: color 0.3s ease;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
 }
 
-.nav-links li a:hover {
-  color: #ffdd57; /* kuning saat hover */
+/* Hover dan Active */
+.navbar ul li a:hover,
+.navbar ul li a.active {
+  background: #FFD529; /* kuning brand */
+  color: #111;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Card di kanan */
-.nav-card {
-  margin-left: auto;  /* supaya nempel ke kanan */
-  background: #19AC54; /* hijau dari gambar kamu */
-  color: white;
-  padding: 10px 20px;
-  border-radius: 10px;
-  font-size: 14px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+/* Icon tambahan (search, darkmode, dll) */
+.navbar .nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar .nav-icons i {
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.navbar .nav-icons i:hover {
+  color: #FFD529;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 12px 20px;
+  }
+
+  .navbar ul {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #0056D2;
+    flex-direction: column;
+    width: 220px;
+    text-align: center;
+    display: none;
+    padding: 20px 0;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .navbar ul.show {
+    display: flex;
+  }
+
+  .navbar ul li {
+    margin: 12px 0;
+  }
+
+  .navbar ul li a {
+    padding: 10px 20px;
+  }
+
+  .navbar .menu-toggle {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+  }
+}
+
+@media (min-width: 769px) {
+  .navbar .menu-toggle {
+    display: none;
+  }
 }

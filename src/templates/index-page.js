@@ -117,7 +117,7 @@ const HomePage = ({ data }) => {
               boxShadow: "0 6px 20px rgba(0,0,0,0.2)",
               transition: "all 0.3s",
               "&:hover": {
-                color: "#fff",
+                color: "#000",
                 transform: "translateY(-3px)",
                 boxShadow: "0 8px 24px rgba(0,0,0,0.3)",
               },

@@ -3,28 +3,9 @@ import { jsx } from "theme-ui"
 import { graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { RiArrowRightSLine } from "react-icons/ri"
-import {
-  RiFacebookBoxFill,
-  RiTwitterFill,
-  RiLinkedinBoxFill,
-  RiYoutubeFill,
-  RiInstagramFill,
-  RiRssFill,
-  RiGithubFill,
-  RiTelegramFill,
-  RiPinterestFill,
-  RiSnapchatFill,
-  RiSkypeFill,
-  RiDribbbleFill,
-  RiMediumFill,
-  RiBehanceFill,
-} from "react-icons/ri"
-import { FaTiktok, FaWordpress, FaVk } from "react-icons/fa"
 
 import Layout from "../components/layout"
-import BlogListHome from "../components/blog-list-home"
 import Seo from "../components/seo"
-import Icons from "../util/socialmedia.json"
 
 export const pageQuery = graphql`
   query HomeQuery($id: String!) {
@@ -36,7 +17,7 @@ export const pageQuery = graphql`
         tagline
         featuredImage {
           childImageSharp {
-            gatsbyImageData(layout: CONSTRAINED, width: 585, height: 439)
+            gatsbyImageData(layout: CONSTRAINED, width: 600, height: 460)
           }
         }
         cta {
@@ -53,14 +34,14 @@ export const pageQuery = graphql`
       edges {
         node {
           id
-          excerpt(pruneLength: 250)
+          excerpt(pruneLength: 180)
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             slug
             title
             featuredImage {
               childImageSharp {
-                gatsbyImageData(layout: CONSTRAINED, width: 345, height: 260)
+                gatsbyImageData(layout: CONSTRAINED, width: 360, height: 240)
               }
             }
           }
@@ -71,226 +52,196 @@ export const pageQuery = graphql`
 `
 
 const HomePage = ({ data }) => {
-  const { markdownRemark, posts } = data // data.markdownRemark holds your post data
+  const { markdownRemark, posts } = data
   const { frontmatter, html } = markdownRemark
-  const Image = frontmatter.featuredImage
-    ? frontmatter.featuredImage.childImageSharp.gatsbyImageData
-    : ""
-  const sIcons = Icons.socialIcons.map((icons, index) => {
-    return (
-      <div key={"social icons" + index}>
-        {icons.icon === "facebook" ? (
-          <a href={icons.url} target="_blank" aria-label="link to Facebook" rel="noopener noreferrer">
-            <RiFacebookBoxFill alt="Facebook icon"/>
-          </a>
-        ) : (
-          ""
-        )}
-        {icons.icon === "twitter" ? (
-          <a href={icons.url} target="_blank" aria-label="link to Twitter" rel="noopener noreferrer">
-            <RiTwitterFill alt="Twitter icon"/>
-          </a>
-        ) : (
-          ""
-        )}
-        {icons.icon === "linkedin" ? (
-          <a href={icons.url} target="_blank" aria-label="link to Linkedin" rel="noopener noreferrer">
-            <RiLinkedinBoxFill alt="Linkedin icon"/>
-          </a>
-        ) : (
-          ""
-        )}
-        {icons.icon === "youtube" ? (
-          <a href={icons.url} target="_blank" aria-label="link to Youtube" rel="noopener noreferrer">
-            <RiYoutubeFill alt="Youtube icon" />
-          </a>
-        ) : (
-          ""
-        )}
-        {icons.icon === "instagram" ? (
-          <a href={icons.url} target="_blank" aria-label="link to Instagram" rel="noopener noreferrer">
-            <RiInstagramFill alt="Instagram icon" />
-          </a>
-        ) : (
-          ""
-        )}
-        {icons.icon === "rss" ? (
-          <a href={icons.url} target="_blank" aria-label="link to RSS" rel="noopener noreferrer">
-            <RiRssFill alt="RSS icon" />
-          </a>
-        ) : (
-          ""
-        )}
-        {icons.icon === "github" ? (
-          <a href={icons.url} target="_blank" aria-label="link to Github" rel="noopener noreferrer">
-            <RiGithubFill alt="Github icon" />
-          </a>
-        ) : (
-          ""
-        )}
-        {icons.icon === "telegram" ? (
-          <a href={icons.url} target="_blank" aria-label="link to Telegram" rel="noopener noreferrer">
-            <RiTelegramFill alt="Telegram icon" />
-          </a>
-        ) : (
-          ""
-        )}
-        {icons.icon === "pinterest" ? (
-          <a href={icons.url} target="_blank" aria-label="link to Pinterest" rel="noopener noreferrer">
-            <RiPinterestFill alt="Pinterest icon" />
-          </a>
-        ) : (
-          ""
-        )}
-        {icons.icon === "snapchat" ? (
-          <a href={icons.url} target="_blank" aria-label="link to Snapchat" rel="noopener noreferrer">
-            <RiSnapchatFill alt="Snapchat icon" />
-          </a>
-        ) : (
-          ""
-        )}
-        {icons.icon === "skype" ? (
-          <a href={icons.url} target="_blank" aria-label="link to Skype" rel="noopener noreferrer">
-            <RiSkypeFill alt="Skype icon" />
-          </a>
-        ) : (
-          ""
-        )}
-        {icons.icon === "wordpress" ? (
-          <a href={icons.url} target="_blank" aria-label="link to Wordpress" rel="noopener noreferrer">
-            <FaWordpress alt="Wordpress icon" />
-          </a>
-        ) : (
-          ""
-        )}
-        {icons.icon === "tiktok" ? (
-          <a href={icons.url} target="_blank" aria-label="link to Wordpress" rel="noopener noreferrer">
-            <FaTiktok alt="tiktok icon" />
-          </a>
-        ) : (
-          ""
-        )}
-        {icons.icon === "dribbble" ? (
-          <a href={icons.url} target="_blank" aria-label="link to Dribbble" rel="noopener noreferrer">
-            <RiDribbbleFill alt="Dribbble icon" />
-          </a>
-        ) : (
-          ""
-        )}
-        {icons.icon === "medium" ? (
-          <a href={icons.url} target="_blank" aria-label="link to Medium" rel="noopener noreferrer">
-            <RiMediumFill alt="Medium icon" />
-          </a>
-        ) : (
-          ""
-        )}
-        {icons.icon === "behance" ? (
-          <a href={icons.url} target="_blank" aria-label="link to Behance" rel="noopener noreferrer">
-            <RiBehanceFill alt="Behance icon" />
-          </a>
-        ) : (
-          ""
-        )}
-        {icons.icon === "vk" ? (
-          <a href={icons.url} target="_blank" aria-label="link to vk" rel="noopener noreferrer">
-            <FaVk alt="vk icon" />
-          </a>
-        ) : (
-          ""
-        )}
-      </div>
-    )
-  })
+  const Image = frontmatter.featuredImage?.childImageSharp.gatsbyImageData
+
   return (
     <Layout>
-      <Seo 
-  title="STIFIn - Tes Kepribadian & Potensi Diri" 
-  description="Kenali potensi diri Anda dengan Tes STIFIn. Metode personality yang akurat untuk pengembangan diri, karier, dan kesuksesan hidup."
-  keywords="Tes STIFIn, Metode STIFIn, Personality Test Indonesia, Tes Kepribadian STIFIn, Tes Bakat STIFIn, STIFIn Online, Karakter STIFIn, STIFIn Coach, STIFIn Blog"
-/>
+      <Seo title="STIFIn - Tes Kepribadian & Potensi Diri" />
 
-      <div className="home-banner grids col-1 sm-2">
+      {/* HERO */}
+      <section
+        sx={{
+          minHeight: "80vh",
+          display: "grid",
+          gridTemplateColumns: ["1fr", "1fr 1fr"],
+          alignItems: "center",
+          gap: 4,
+          px: [3, 5],
+          py: [5, 6],
+          bg: "linear-gradient(135deg,#FFF8E1,#FFD529)",
+        }}
+      >
         <div>
-          <h1 className="title">{frontmatter.title}</h1>
-          <p
-            className="tagline"
+          <h1
             sx={{
-              color: "muted",
+              fontSize: [5, 6],
+              fontWeight: "900",
+              lineHeight: 1.1,
+              color: "#111",
+            }}
+          >
+            {frontmatter.title}
+          </h1>
+          <p
+            sx={{
+              mt: 3,
+              fontSize: [2, 3],
+              color: "#444",
+              maxWidth: "480px",
             }}
           >
             {frontmatter.tagline}
           </p>
           <div
-            className="description"
+            sx={{ mt: 3, fontSize: 2, color: "#333" }}
             dangerouslySetInnerHTML={{ __html: html }}
           />
+
+          {/* CTA */}
           <Link
-  to={frontmatter.cta.ctaLink}
-  className="button"
-  // sx={{
-  //   bg: "#FFD529",      // 🔵 biru
-  //   color: "#fff",
-  //   px: 3,
-  //   py: 2,
-  //   borderRadius: "8px",
-  //   fontWeight: "bold",
-  //   textDecoration: "none",
-  //   transition: "0.3s",
-  //   "&:hover": {
-  //     bg: "#28a745",   // 🟢 hijau saat hover
-  //     color: "#fff",
-  //   },
-  // }}
-  sx={{
-    variant: "variants.button",
-    transition: "0.3s",
-    backgroundColor: "#FFD529", // warna kuning
-    color: "#000", // teks hitam biar kontras, bisa diubah
-    '&:hover': {
-      backgroundColor: "#28a745", // warna hijau saat hover
-      color: "#fff", // teks putih saat hover, bisa diubah
-    },
-  }}
->
-  {frontmatter.cta.ctaText}
-  <span className="icon -right">
-    <RiArrowRightSLine />
-  </span>
-</Link>
+            to={frontmatter.cta.ctaLink}
+            sx={{
+              display: "inline-flex",
+              alignItems: "center",
+              mt: 4,
+              px: 5,
+              py: 3,
+              fontSize: 2,
+              fontWeight: "bold",
+              borderRadius: "999px",
+              bg: "linear-gradient(90deg,#FFD529,#FF9800)",
+              color: "#000",
+              textDecoration: "none",
+              boxShadow: "0 6px 20px rgba(0,0,0,0.2)",
+              transition: "all 0.3s",
+              "&:hover": {
+                color: "#fff",
+                transform: "translateY(-3px)",
+                boxShadow: "0 8px 24px rgba(0,0,0,0.3)",
+              },
+            }}
+          >
+            {frontmatter.cta.ctaText}
+            <RiArrowRightSLine sx={{ ml: 2, fontSize: 3 }} />
+          </Link>
 
-        <div
-  className="social-icons"
-  sx={{
-    display: "flex",
-    gap: 3,
-    mt: 3,
-    "& a": {
-      fontSize: "28px",
-      color: "#FFD529",   // 🔴 merah default
-      transition: "0.3s",
-      "&:hover": {
-        color: "#ff9900", // 🟠 oranye saat hover
-      },
-    },
-  }}
->
-  {sIcons}
-</div>
-
+          {/* SOCIAL ICONS - dimatikan */}
+          {/*
+          <div sx={{ mt: 4, display: "flex", gap: 2, flexWrap: "wrap" }}>
+            {sIcons}
+          </div>
+          */}
         </div>
-        <div>
-          {Image ? (
+
+        {Image && (
+          <div sx={{ textAlign: "center" }}>
             <GatsbyImage
               image={Image}
-              alt={frontmatter.title + " - Featured image"}
-              className="featured-image"
+              alt={frontmatter.title}
+              sx={{
+                borderRadius: "24px",
+                boxShadow: "0 15px 40px rgba(0,0,0,0.15)",
+              }}
             />
-          ) : (
-            ""
-          )}
+          </div>
+        )}
+      </section>
+
+      {/* BLOG SECTION */}
+      <section sx={{ px: [3, 5], py: [5, 6], bg: "#fafafa" }}>
+        <h2
+          sx={{
+            textAlign: "center",
+            fontSize: [4, 5],
+            fontWeight: "700",
+            mb: 5,
+          }}
+        >
+          ✨ Artikel Terbaru
+        </h2>
+
+        <div
+          sx={{
+            display: "grid",
+            gridTemplateColumns: ["1fr", "1fr 1fr", "1fr 1fr 1fr"],
+            gap: 4,
+          }}
+        >
+          {posts.edges.map(({ node }) => {
+            const img =
+              node.frontmatter.featuredImage?.childImageSharp.gatsbyImageData
+            return (
+              <Link
+                key={node.id}
+                to={node.frontmatter.slug}
+                sx={{
+                  display: "block",
+                  borderRadius: "16px",
+                  overflow: "hidden",
+                  boxShadow: "0 6px 18px rgba(0,0,0,0.1)",
+                  bg: "#fff",
+                  textDecoration: "none",
+                  color: "inherit",
+                  transition: "all 0.3s",
+                  "&:hover": {
+                    transform: "translateY(-6px)",
+                    boxShadow: "0 12px 28px rgba(0,0,0,0.15)",
+                  },
+                }}
+              >
+                {img && (
+                  <div
+                    sx={{
+                      overflow: "hidden",
+                      maxHeight: "220px",
+                    }}
+                  >
+                    <GatsbyImage
+                      image={img}
+                      alt={node.frontmatter.title}
+                      sx={{
+                        transition: "0.4s",
+                        "&:hover": { transform: "scale(1.08)" },
+                      }}
+                    />
+                  </div>
+                )}
+                <div sx={{ p: 3 }}>
+                  <p
+                    sx={{
+                      fontSize: 1,
+                      color: "gray",
+                      mb: 2,
+                    }}
+                  >
+                    {node.frontmatter.date}
+                  </p>
+                  <h3
+                    sx={{
+                      fontSize: 3,
+                      fontWeight: "700",
+                      mb: 2,
+                      lineHeight: 1.3,
+                    }}
+                  >
+                    {node.frontmatter.title}
+                  </h3>
+                  <p
+                    sx={{
+                      fontSize: 2,
+                      color: "#555",
+                    }}
+                  >
+                    {node.excerpt}
+                  </p>
+                </div>
+              </Link>
+            )
+          })}
         </div>
-      </div>
-      <BlogListHome data={posts} />
+      </section>
     </Layout>
   )
 }

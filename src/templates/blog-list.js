@@ -1,127 +1,133 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import React from "react"
-import { Link, graphql } from "gatsby"
-import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
-import Layout from "../components/layout"
-import PostCard from "../components/post-card"
-import Seo from "../components/seo"
+import { Link } from "gatsby"
 
-const styles = {
-  pagination: {
-    a: {
-      color: "muted",
-      "&.is-active": {
-        color: "text",
-      },
-      "&:hover": {
-        color: "text",
-      },
-    },
-  },
-}
+const PostCard = ({ node }) => {
+  if (!node) return null
 
-export const blogListQuery = graphql`
-  query blogListQuery($skip: Int!, $limit: Int!) {
-    allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { template: { eq: "blog-post" } } }
-      limit: $limit
-      skip: $skip
-    ) {
-      edges {
-        node {
-          id
-          excerpt(pruneLength: 250)
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            slug
-            title
-            featuredImage {
-              childImageSharp {
-                gatsbyImageData(layout: CONSTRAINED, width: 345, height: 260)
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-`
-const Pagination = props => (
-  <div className="pagination" sx={styles.pagination}>
-    <ul>
-      {!props.isFirst && (
-        <li>
-          <Link to={props.prevPage} rel="prev">
-            <span className="icon -left">
-              <RiArrowLeftLine />
-            </span>{" "}
-            Previous
-          </Link>
-        </li>
-      )}
-      {Array.from({ length: props.numPages }, (_, i) => (
-        <li key={`pagination-number${i + 1}`}>
-          <Link
-            to={`${props.blogSlug}${i === 0 ? "" : i + 1}`}
-            className={props.currentPage === i + 1 ? "is-active num" : "num"}
+  const { frontmatter, excerpt } = node
+  const image = frontmatter.featuredImage?.childImageSharp?.gatsbyImageData
+
+  return (
+    <article
+      sx={{
+        bg: "background",
+        borderRadius: 4,
+        boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
+        transition: "transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease",
+        cursor: "pointer",
+        display: "flex",
+        flexDirection: "column",
+        overflow: "hidden",
+        "&:hover": {
+          transform: "translateY(-8px) scale(1.02)",
+          boxShadow: "0 12px 24px rgba(0,0,0,0.2)",
+          bg: "muted",
+          "& img": {
+            transform: "scale(1.05)",
+          },
+          "& div.textContent": {
+            color: "primary",
+          },
+        },
+      }}
+    >
+      {image && (
+        <Link to={frontmatter.slug} sx={{ overflow: "hidden", display: "block" }}>
+          <div
+            sx={{
+              position: "relative",
+              height: 0,
+              paddingBottom: "75%", // 4:3 ratio
+              overflow: "hidden",
+            }}
           >
-            {i + 1}
-          </Link>
-        </li>
-      ))}
-      {!props.isLast && (
-        <li>
-          <Link to={props.nextPage} rel="next">
-            Next{" "}
-            <span className="icon -right">
-              <RiArrowRightLine />
-            </span>
-          </Link>
-        </li>
+            <img
+              src={image.images.fallback.src}
+              alt={frontmatter.title}
+              loading="lazy"
+              sx={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                transition: "transform 0.4s ease",
+                transformOrigin: "center center",
+                pointerEvents: "none",
+              }}
+            />
+          </div>
+        </Link>
       )}
-    </ul>
-  </div>
-)
-class BlogIndex extends React.Component {
-  render() {
-    const { data } = this.props
-    const { currentPage, numPages } = this.props.pageContext
-    const blogSlug = "/blog/"
-    const isFirst = currentPage === 1
-    const isLast = currentPage === numPages
-    const prevPage =
-      currentPage - 1 === 1 ? blogSlug : blogSlug + (currentPage - 1).toString()
-    const nextPage = blogSlug + (currentPage + 1).toString()
-
-    const posts = data.allMarkdownRemark.edges
-      .filter(edge => !!edge.node.frontmatter.date)
-      .map(edge => <PostCard key={edge.node.id} data={edge.node} />)
-    let props = {
-      isFirst,
-      prevPage,
-      numPages,
-      blogSlug,
-      currentPage,
-      isLast,
-      nextPage,
-    }
-
-    return (
-      <Layout className="blog-page">
-        <Seo
-          title={"Blog — Page " + currentPage + " of " + numPages}
-          description={
-            "Stackrole base blog page " + currentPage + " of " + numPages
-          }
-        />
-        <h1>Blog</h1>
-        <div className="grids col-1 sm-2 lg-3">{posts}</div>
-        <Pagination {...props} />
-      </Layout>
-    )
-  }
+      <div
+        className="textContent"
+        sx={{
+          p: 3,
+          flexGrow: 1,
+          display: "flex",
+          flexDirection: "column",
+          color: "text",
+          transition: "color 0.3s ease",
+        }}
+      >
+        <Link
+          to={frontmatter.slug}
+          sx={{
+            color: "inherit",
+            fontWeight: "bold",
+            fontSize: 3,
+            mb: 2,
+            textDecoration: "none",
+            position: "relative",
+            "&::after": {
+              content: '""',
+              position: "absolute",
+              width: "0%",
+              height: "2px",
+              bottom: 0,
+              left: 0,
+              bg: "primary",
+              transition: "width 0.3s ease",
+            },
+            "&:hover::after": {
+              width: "100%",
+            },
+          }}
+        >
+          {frontmatter.title}
+        </Link>
+        <p
+          sx={{
+            color: "muted",
+            fontSize: 1,
+            lineHeight: "body",
+            flexGrow: 1,
+            overflow: "hidden",
+            display: "-webkit-box",
+            WebkitLineClamp: 4,
+            WebkitBoxOrient: "vertical",
+          }}
+        >
+          {excerpt}
+        </p>
+        <time
+          sx={{
+            mt: 3,
+            fontSize: 0,
+            color: "secondary",
+            fontWeight: "600",
+            alignSelf: "flex-start",
+          }}
+        >
+          {frontmatter.date}
+        </time>
+      </div>
+    </article>
+  )
 }
 
-export default BlogIndex
+
+export default PostCard

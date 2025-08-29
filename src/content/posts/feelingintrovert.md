@@ -4,7 +4,7 @@ title: Feeling Introvert
 slug: /new-post
 date: 2020-05-09T05:53:16.102Z
 description: Feeling Introvert dalam Konsep STIFIn
-featuredImage: /assets/sebastiaan-stam-5hbrem-5mnq-unsplash.jpg
+featuredImage: /assets/feelingintro.jpg
 ---
 
 

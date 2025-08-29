@@ -3,7 +3,7 @@ title: SENSING INTROVERT
 template: blog-post
 date: 2020-05-13 09:19
 slug: /typography
-featuredImage: /assets/alexander-andrews-zw07kvdahpw-unsplash.jpg
+featuredImage: /assets/sensingintro.jpg
 description: PENGERTIAN SENSING INTROVERT
 ---
 

@@ -4,7 +4,7 @@ title: Intuiting Extrovert
 slug: /post-no-image
 date: 2020-05-11 08:40
 description: Intuiting Extrovert dalam Konsep STIFIn
-featuredImage: /assets/annie-spratt-hx_hf2lppuu-unsplash.jpg
+featuredImage: /assets/intuitingeks.png
 ---
 
 

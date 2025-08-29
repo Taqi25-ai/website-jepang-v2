@@ -4,7 +4,7 @@ title: THINKING EKSTROVERT
 slug: /THINKING-EKSTROVERT
 date: 2020-05-13 12:47
 description: PENGERTIAN THINKING EKSTROVERT
-featuredImage: /assets/charles-deluvio-d-vdqmtfaau-unsplash.jpg
+featuredImage: /assets/thinkekstro.jpg
 ---
 
 

@@ -4,7 +4,7 @@ title: Sensing Ekstrovert
 slug: /character-design
 date: 2020-05-23 23:40
 description: Memahami Sensing Ekstrovert
-featuredImage: /assets/andrew-seaman-4fi_4q6_efm-unsplash.jpg
+featuredImage: /assets/sensingekstro.jpg
 ---
 
 ### PENGERTIAN SENSING EKSTROVERT

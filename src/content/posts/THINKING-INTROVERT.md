@@ -4,7 +4,7 @@ title: THINKING INTROVERT
 slug: /THINKING-INTROVERT
 date: 2020-05-13 12:37
 description: PENGERTIAN THINKING INTROVERT
-featuredImage: /assets/screen-post-hixmjh9xhoo-unsplash.jpg
+featuredImage: /assets/thinkintro.png
 ---
 
 

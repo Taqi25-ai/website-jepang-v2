@@ -4,7 +4,7 @@ title: Thinking selalu Trust Issue
 slug: /trustissue
 date: 2020-05-13 12:46
 description: Bagaimana menyakinkan thinking yang trus issue untuk siap menikah
-featuredImage: /assets/bench-accounting-nvzvopqw0gc-unsplash.jpg
+featuredImage: /assets/trustissue.png
 ---
 
 

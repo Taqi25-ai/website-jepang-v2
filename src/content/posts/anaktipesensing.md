@@ -4,13 +4,13 @@ title: Anak Tipe Sensing
 slug: /gaming-extravaganza
 date: 2020-05-13 12:55
 description: Cara Memahami Anak Yang Tipe Sensing
-featuredImage: /assets/fredrick-tendong-hvyepjyehdq-unsplash.jpg
+featuredImage: /assets/anaktipesensing.png
 ---
 
 
 ### BAGAIMANA MEMAHAMI ANAK TIPE SENSING
 
-Setiap anak itu unik. Mereka memiliki kepribadian, cara belajar, dan cara berpikir yang berbeda-beda. Memahami perbedaan ini sangat penting agar orang tua bisa memberikan pola asuh yang tepat dan mendukung tumbuh kembang anak secara optimal.
+Setiap anak itu unik. Mereka memiliki kepribadian, cara belajar, dan cara berpikir yang berbeda-beda. Memahami perbedaan ini sangat penting agar orang tua bisa memberikan pola asuh yang tepat dan mendukung tumbuh kembang anak secara optimal. 
 
 Salah satu cara untuk mengenali karakter anak adalah melalui tes STIFIn, yang mengelompokkan tipe kepribadian menjadi lima: Sensing, Thinking, Intuiting, Feeling, dan Insting. Dalam artikel ini, kita akan membahas secara khusus tentang anak dengan tipe Sensing.
 

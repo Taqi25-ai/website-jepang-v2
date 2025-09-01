@@ -1,12 +1,14 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
+import { RiArrowRightLine, RiArrowLeftLine, RiUnderline } from "react-icons/ri"
+import Layout from "../components/layout"
+import Seo from "../components/seo"
+import { FiUnderline } from "react-icons/fi"
 
-const PostCard = ({ node }) => {
-  if (!node) return null
-
-  const { frontmatter, excerpt } = node
+const PostCard = ({ data }) => {
+  const { frontmatter, excerpt } = data
   const image = frontmatter.featuredImage?.childImageSharp?.gatsbyImageData
 
   return (
@@ -15,22 +17,14 @@ const PostCard = ({ node }) => {
         bg: "background",
         borderRadius: 4,
         boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
-        transition: "transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease",
-        cursor: "pointer",
+        transition: "transform 0.3s ease, box-shadow 0.3s ease",
+        "&:hover": {
+          transform: "translateY(-6px)",
+          boxShadow: "0 8px 20px rgba(0,0,0,0.15)",
+        },
         display: "flex",
         flexDirection: "column",
         overflow: "hidden",
-        "&:hover": {
-          transform: "translateY(-8px) scale(1.02)",
-          boxShadow: "0 12px 24px rgba(0,0,0,0.2)",
-          bg: "muted",
-          "& img": {
-            transform: "scale(1.05)",
-          },
-          "& div.textContent": {
-            color: "primary",
-          },
-        },
       }}
     >
       {image && (
@@ -55,28 +49,19 @@ const PostCard = ({ node }) => {
                 height: "100%",
                 objectFit: "cover",
                 transition: "transform 0.4s ease",
-                transformOrigin: "center center",
-                pointerEvents: "none",
+                "&:hover": {
+                  transform: "scale(1.05)",
+                },
               }}
             />
           </div>
         </Link>
       )}
-      <div
-        className="textContent"
-        sx={{
-          p: 3,
-          flexGrow: 1,
-          display: "flex",
-          flexDirection: "column",
-          color: "text",
-          transition: "color 0.3s ease",
-        }}
-      >
+      <div sx={{ p: 3, flexGrow: 1, display: "flex", flexDirection: "column" }}>
         <Link
           to={frontmatter.slug}
           sx={{
-            color: "inherit",
+            color: "text",
             fontWeight: "bold",
             fontSize: 3,
             mb: 2,
@@ -117,7 +102,7 @@ const PostCard = ({ node }) => {
           sx={{
             mt: 3,
             fontSize: 0,
-            color: "secondary",
+            color: "#FFD529",
             fontWeight: "600",
             alignSelf: "flex-start",
           }}
@@ -129,5 +114,202 @@ const PostCard = ({ node }) => {
   )
 }
 
+const Pagination = ({
+  isFirst,
+  isLast,
+  prevPage,
+  nextPage,
+  numPages,
+  currentPage,
+  blogSlug,
+}) => (
+  <nav
+    sx={{
+      mt: 6,
+      mb: 5,
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "wrap",
+      gap: 3,
+      userSelect: "none",
+    }}
+    aria-label="Pagination Navigation"
+  >
+    <Link
+      to={isFirst ? "#" : prevPage}
+      sx={{
+        pointerEvents: isFirst ? "none" : "auto",
+        color: isFirst ? "#FFD529" : "primary",
+        display: "flex",
+        alignItems: "center",
+        fontWeight: "bold",
+        fontSize: 2,
+        textDecoration: "none",
+        borderRadius: "50%",
+        width: 40,
+        height: 40,
+        justifyContent: "center",
+        bg: isFirst ? "background" : "primary",
+        boxShadow: isFirst ? "none" : "0 2px 8px rgba(0,0,0,0.15)",
+        transition: "all 0.3s ease",
+        "&:hover": {
+          bg: isFirst ? "background" : "secondary",
+          color: isFirst ? "#FFD529" : "background",
+        },
+      }}
+      aria-disabled={isFirst}
+      rel="prev"
+    >
+      <RiArrowLeftLine />
+    </Link>
 
-export default PostCard
+    {Array.from({ length: numPages }, (_, i) => {
+      const pageNum = i + 1
+      const isActive = currentPage === pageNum
+      const linkTo = pageNum === 1 ? blogSlug : `${blogSlug}${pageNum}`
+
+      return (
+        <Link
+          key={`pagination-number${pageNum}`}
+          to={linkTo}
+          sx={{
+            width: 40,
+            height: 40,
+            borderRadius: "50%",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            fontWeight: isActive ? "bold" : "normal",
+            color: isActive ? "background" : "primary",
+            bg: isActive ? "primary" : "transparent",
+            boxShadow: isActive ? "0 4px 12px rgba(0,0,0,0.2)" : "none",
+            textDecoration: "none",
+            fontSize: 2,
+            transition: "all 0.3s ease",
+            "&:hover": {
+              bg: isActive ? "primary" : "#FFD529",
+              color: isActive ? "background" : "text",
+            },
+          }}
+          aria-current={isActive ? "page" : undefined}
+        >
+          {pageNum}
+        </Link>
+      )
+    })}
+
+    <Link
+      to={isLast ? "#" : nextPage}
+      sx={{
+        pointerEvents: isLast ? "none" : "auto",
+        color: isLast ? "#FFD529" : "primary",
+        display: "flex",
+        alignItems: "center",
+        fontWeight: "bold",
+        fontSize: 2,
+        textDecoration: "none",
+        borderRadius: "50%",
+        width: 40,
+        height: 40,
+        justifyContent: "center",
+        bg: isLast ? "background" : "primary",
+        boxShadow: isLast ? "none" : "0 2px 8px rgba(0,0,0,0.15)",
+        transition: "all 0.3s ease",
+        "&:hover": {
+          bg: isLast ? "background" : "secondary",
+          color: isLast ? "#FFD529" : "background",
+        },
+      }}
+      aria-disabled={isLast}
+      rel="next"
+    >
+      <RiArrowRightLine />
+    </Link>
+  </nav>
+)
+
+const BlogIndex = ({ data, pageContext }) => {
+  const { currentPage, numPages } = pageContext
+  const blogSlug = "/blog/"
+  const isFirst = currentPage === 1
+  const isLast = currentPage === numPages
+  const prevPage = currentPage - 1 === 1 ? blogSlug : `${blogSlug}${currentPage - 1}`
+  const nextPage = `${blogSlug}${currentPage + 1}`
+
+  const posts = data.allMarkdownRemark.edges
+    .filter(edge => !!edge.node.frontmatter.date)
+    .map(edge => <PostCard key={edge.node.id} data={edge.node} />)
+
+  return (
+    <Layout className="blog-page">
+      <Seo
+        title={`Blog — Page ${currentPage} of ${numPages}`}
+        description={`Stackrole base blog page ${currentPage} of ${numPages}`}
+      />
+      <h1
+        sx={{
+          fontSize: [5, 6],
+          fontWeight: "heading",
+          textAlign: "center",
+          mb: 5,
+          mt: 4,
+          color: "#FFD529",
+          textDecoration: "RiUnderline",
+        }}
+      >
+        Blog
+      </h1>
+      <div
+        sx={{
+          display: "grid",
+          gridTemplateColumns: ["1fr", "repeat(2, 1fr)", "repeat(3, 1fr)"],
+          gap: 5,
+          px: [3, 4],
+          mb: 6,
+        }}
+      >
+        {posts}
+      </div>
+      <Pagination
+        isFirst={isFirst}
+        isLast={isLast}
+        prevPage={prevPage}
+        nextPage={nextPage}
+        numPages={numPages}
+        currentPage={currentPage}
+        blogSlug={blogSlug}
+      />
+    </Layout>
+  )
+}
+
+export default BlogIndex
+
+export const blogListQuery = graphql`
+  query blogListQuery($skip: Int!, $limit: Int!) {
+    allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { frontmatter: { template: { eq: "blog-post" } } }
+      limit: $limit
+      skip: $skip
+    ) {
+      edges {
+        node {
+          id
+          excerpt(pruneLength: 250)
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            slug
+            title
+            featuredImage {
+              childImageSharp {
+                gatsbyImageData(layout: CONSTRAINED, width: 345, height: 260)
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`

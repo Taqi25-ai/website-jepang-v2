@@ -1,5 +1,6 @@
 .footer-curved {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  /* background: linear-gradient(135deg, #FFD529 0%, #0056D2 100%); */
+background:  #0056D2 ;
   color: white;
   padding: 2rem 1rem;
   text-align: center;

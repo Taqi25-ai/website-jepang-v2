@@ -5,11 +5,11 @@ import "./footer.css"
 const Footer = () => (
   <footer className="footer-curved">
     <p>
-      © {new Date().getFullYear()}{" "}
+      
       <Link to="/" className="footer-link">
-        STIFIn
+       <b>STIFIn</b> 
       </Link>
-      . All rights reserved.
+      
     </p>
   </footer>
 )

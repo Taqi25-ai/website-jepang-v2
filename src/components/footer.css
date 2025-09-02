@@ -13,7 +13,9 @@ background:  #0056D2 ;
 .footer-link {
   color: #ffd700;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 1200;
+  font-size: 33px;
+  font-style: oblique;
 }
 .footer-link:hover,
 .footer-link:focus {

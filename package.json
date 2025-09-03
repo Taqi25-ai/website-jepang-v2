@@ -37,9 +37,9 @@
     "gatsby-plugin-sitemap": "^5.25.0",
     "gatsby-plugin-theme-ui": "^0.12.1",
     "gatsby-remark-custom-blocks": "^4.2.0",
-    "gatsby-remark-images": "^5.25.0",
-    "gatsby-remark-prismjs": "^4.21.0",
-    "gatsby-remark-responsive-iframe": "^5.21.0",
+    "gatsby-remark-images": "^4.25.0",
+   "gatsby-remark-prismjs": "^5.25.0",
+    "gatsby-remark-responsive-iframe": "^5.25.0",
 
     "gatsby-source-filesystem": "^4.25.0",
     "gatsby-transformer-remark": "^5.25.0",

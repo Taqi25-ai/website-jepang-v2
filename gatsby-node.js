@@ -1,13 +1,20 @@
 // gatsby-node.js
-
-require("./polyfills"); // pastikan polyfills dijalankan
+require("./polyfills"); // pastikan polyfills dijalankan saat build
 
 const path = require("path");
-const { createFilePath } = require(`gatsby-source-filesystem`);
+const { createFilePath } = require("gatsby-source-filesystem");
+
+exports.onCreateNode = ({ node, getNode, actions }) => {
+  const { createNodeField } = actions;
+  if (node.internal.type === "MarkdownRemark") {
+    const slug = createFilePath({ node, getNode, basePath: "pages" });
+    createNodeField({ node, name: "slug", value: slug });
+  }
+};
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
-  const blogList = path.resolve(`./src/templates/blog-list.js`);
+  const blogListTemplate = path.resolve("./src/templates/blog-list.js");
 
   const result = await graphql(`
     {
@@ -27,7 +34,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   `);
 
   if (result.errors) {
-    reporter.panicOnBuild(`Error while running GraphQL query.`);
+    reporter.panicOnBuild("Error while running GraphQL query.");
     return;
   }
 
@@ -41,32 +48,21 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
     createPage({
       path: post.node.frontmatter.slug,
-      component: path.resolve(`src/templates/${post.node.frontmatter.template}.js`),
+      component: path.resolve(`./src/templates/${post.node.frontmatter.template}.js`),
       context: { id, previous, next },
     });
 
-    if (post.node.frontmatter.template === "blog-post") {
-      blogPostsCount++;
-    }
+    if (post.node.frontmatter.template === "blog-post") blogPostsCount++;
   });
 
-  // Pagination blog list
   const postsPerPage = 9;
   const numPages = Math.ceil(blogPostsCount / postsPerPage);
 
   Array.from({ length: numPages }).forEach((_, i) => {
     createPage({
-      path: i === 0 ? `/blog` : `/blog/${i + 1}`,
-      component: blogList,
+      path: i === 0 ? "/blog" : `/blog/${i + 1}`,
+      component: blogListTemplate,
       context: { limit: postsPerPage, skip: i * postsPerPage, numPages, currentPage: i + 1 },
     });
   });
-};
-
-exports.onCreateNode = ({ node, getNode, actions }) => {
-  const { createNodeField } = actions;
-  if (node.internal.type === `MarkdownRemark`) {
-    const slug = createFilePath({ node, getNode, basePath: `pages` });
-    createNodeField({ node, name: `slug`, value: slug });
-  }
 };

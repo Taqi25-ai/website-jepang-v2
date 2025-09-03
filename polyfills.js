@@ -1,6 +1,5 @@
 // polyfills.js
-
-// Polyfill File, Blob, FileReader untuk SSR/Node
+// Polyfills untuk Node dan SSR
 if (typeof global.File === "undefined") {
   global.File = class File {
     constructor(parts = [], filename = '', options = {}) {
@@ -44,4 +43,4 @@ if (typeof global.FileReader === "undefined") {
   };
 }
 
-console.log("Polyfills File, Blob, FileReader sudah di-load di Node/SSR");
+console.log("Polyfills aktif");

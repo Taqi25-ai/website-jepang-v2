@@ -39,7 +39,8 @@
     "gatsby-remark-custom-blocks": "^4.2.0",
     "gatsby-remark-images": "^4.21.0",
     "gatsby-remark-prismjs": "^4.21.0",
-    "gatsby-remark-responsive-iframe": "^4.12.0",
+    "gatsby-remark-responsive-iframe": "^5.21.0",
+
     "gatsby-source-filesystem": "^4.25.0",
     "gatsby-transformer-remark": "^4.12.0",
     "gatsby-transformer-sharp": "^4.25.0",

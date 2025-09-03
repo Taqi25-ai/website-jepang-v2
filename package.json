@@ -26,6 +26,8 @@
     "@fortawesome/react-fontawesome": "^0.1.18",
     "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "^3.0.2",
     "@theme-ui/color": "^0.6.0",
+    "ajv": "^6.12.6",
+    "ajv-keywords": "^3.5.2",
     "framer-motion": "^4.1.17",
     "gatsby": "^4.25.9",
     "gatsby-plugin-google-analytics": "^4.25.0",

@@ -4,7 +4,7 @@
   "scripts": {
     "develop": "gatsby develop",
     "start": "npm run develop",
-    "build": "npm install --legacy-peer-deps && gatsby build",
+    "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
@@ -28,7 +28,7 @@
     "gatsby-plugin-google-analytics": "^4.25.0",
     "gatsby-plugin-image": "^2.25.0",
     "gatsby-plugin-manifest": "^4.25.0",
-    "gatsby-plugin-netlify-cms": "^4.10.1",
+    "gatsby-plugin-netlify-cms": "^7.0.0",
     "gatsby-plugin-netlify-cms-paths": "^1.3.0",
     "gatsby-plugin-react-helmet": "^5.25.0",
     "gatsby-plugin-sass": "^5.25.0",

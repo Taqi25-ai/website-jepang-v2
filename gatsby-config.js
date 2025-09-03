@@ -90,18 +90,10 @@ module.exports = {
         name: `STIFIn`,
         short_name: `STIFIn`,
         start_url: `/`,
-        background_color: `#FAD02F`,   // kuning cerah
-        theme_color: `#25B05D`,        // hijau utama
+        background_color: `#FAD02F`,
+        theme_color: `#25B05D`,
         display: `standalone`,
         icon: "static" + settings.meta.iconimage,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-pwa`,   // 🚀 pengganti offline
-      options: {
-        workboxConfig: {
-          globPatterns: ["**/*.{html,js,css,svg,png,jpg,jpeg,woff2}"],
-        },
       },
     },
     {

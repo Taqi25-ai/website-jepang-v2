@@ -44,25 +44,20 @@ module.exports = {
               maxWidth: 1024,
               showCaptions: true,
               linkImagesToOriginal: false,
-              tracedSVG: true,
               loading: "lazy",
             },
           },
           {
             resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,
             options: {
-              // Fields to index
               fields: [`title`, `template`, `slug`],
-              // How to resolve each field`s value for a supported node type
               resolvers: {
-                // For any node of type MarkdownRemark, list how to resolve the fields` values
                 MarkdownRemark: {
                   template: node => node.frontmatter.template,
                   title: node => node.frontmatter.title,
                   slug: node => node.frontmatter.slug,
                 },
               },
-              // Optional filter to limit indexed nodes
               filter: (node, getNode) => node.frontmatter.tags !== "exempt",
             },
           },
@@ -71,14 +66,8 @@ module.exports = {
             resolve: `gatsby-remark-prismjs`,
             options: {
               classPrefix: "language-",
-              inlineCodeMarker: null,
-              aliases: {},
               showLineNumbers: false,
               noInlineHighlight: false,
-              // By default the HTML entities <>&'" are escaped.
-              // Add additional HTML escapes by providing a mapping
-              // of HTML entities and their escape value IE: { '}': '&#123;' }
-              escapeEntities: {},
             },
           },
         ],
@@ -95,21 +84,26 @@ module.exports = {
       },
     },
     `gatsby-plugin-sitemap`,
-{
-  resolve: `gatsby-plugin-manifest`, 
-  options: {
-    name: `STIFIn`,
-    short_name: `STIFIn`,
-    start_url: `/`,
-    background_color: `#FAD02F`,   // 🌟 kuning cerah
-    theme_color: `#25B05D`,        // 🌿 hijau utama
-    display: `standalone`,
-    icon: "static" + settings.meta.iconimage,
-  },
-},
-
-    "gatsby-plugin-offline",
-    `gatsby-plugin-netlify`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `STIFIn`,
+        short_name: `STIFIn`,
+        start_url: `/`,
+        background_color: `#FAD02F`,   // kuning cerah
+        theme_color: `#25B05D`,        // hijau utama
+        display: `standalone`,
+        icon: "static" + settings.meta.iconimage,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-pwa`,   // 🚀 pengganti offline
+      options: {
+        workboxConfig: {
+          globPatterns: ["**/*.{html,js,css,svg,png,jpg,jpeg,woff2}"],
+        },
+      },
+    },
     {
       resolve: `gatsby-plugin-netlify`,
       options: {

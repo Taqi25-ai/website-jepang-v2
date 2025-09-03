@@ -27,7 +27,7 @@
     "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "^3.0.2",
     "@theme-ui/color": "^0.6.0",
     "framer-motion": "^4.1.17",
-    "gatsby": "^4.7.1",
+    "gatsby": "^4.25.9",
     "gatsby-plugin-google-analytics": "^4.7.0",
     "gatsby-plugin-image": "^2.7.0",
     "gatsby-plugin-manifest": "^4.7.0",
@@ -56,5 +56,8 @@
   },
   "devDependencies": {
     "gatsby-plugin-netlify": "^4.1.0"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }

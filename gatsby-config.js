@@ -1,8 +1,3 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
 const netlifyCmsPaths = {
   resolve: `gatsby-plugin-netlify-cms-paths`,
   options: {
@@ -75,7 +70,7 @@ module.exports = {
     },
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
-    "gatsby-plugin-theme-ui",
+    `gatsby-plugin-theme-ui`,
     `gatsby-plugin-netlify-cms`,
     {
       resolve: `gatsby-plugin-google-analytics`,
@@ -93,7 +88,7 @@ module.exports = {
         background_color: `#FAD02F`,
         theme_color: `#25B05D`,
         display: `standalone`,
-        icon: "static" + settings.meta.iconimage,
+        icon: `static${settings.meta.iconimage}`,
       },
     },
     {

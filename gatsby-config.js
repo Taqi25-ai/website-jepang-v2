@@ -24,7 +24,7 @@ module.exports = {
         name: `content`,
       },
     },
-    `gatsby-plugin-image`,
+    `gatsby-plugin-image`, // pakai versi 3.x
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
@@ -71,7 +71,7 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-theme-ui`,
-    `gatsby-plugin-netlify-cms`,
+    // gatsby-plugin-netlify-cms dihapus sementara
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -97,7 +97,6 @@ module.exports = {
         headers: {},
         allPageHeaders: [],
         mergeSecurityHeaders: true,
-        mergeLinkHeaders: true,
         mergeCachingHeaders: true,
         transformHeaders: (headers, path) => headers,
         generateMatchPathRewrites: true,

@@ -4,7 +4,8 @@
   "scripts": {
     "develop": "gatsby develop",
     "start": "npm run develop",
-    "build": "gatsby build --log-pages",
+   "build": "npm install --legacy-peer-deps && gatsby build",
+
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },

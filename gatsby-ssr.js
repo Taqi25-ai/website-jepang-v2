@@ -1,7 +1,5 @@
 // gatsby-ssr.js
 
-// Load polyfills untuk Node environment
-require("./polyfills");
+require("./polyfills"); // pastikan polyfills dijalankan di SSR
 
-// Optional: Kalau mau, bisa tambah log supaya tau polyfill aktif
-console.log("Polyfills File, Blob, dan FileReader sudah di-load di SSR.");
+console.log("Polyfills SSR aktif");

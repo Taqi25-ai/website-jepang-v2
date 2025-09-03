@@ -14,7 +14,7 @@
   "scripts": {
     "develop": "gatsby develop",
     "start": "npm run develop",
-    "build": "gatsby build --log-pages",
+    "build": "node -r ./polyfills.js node_modules/.bin/gatsby build --log-pages",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",

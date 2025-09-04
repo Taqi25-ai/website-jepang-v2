@@ -7,7 +7,6 @@ import { faWhatsapp } from "@fortawesome/free-brands-svg-icons"
 import Header from "./header"
 import Logo from "./logo"
 import Footer from "./footer"
-import Theme from "../components/theme"
 import Search from "../components/search"
 
 import "../assets/scss/style.scss"
@@ -36,7 +35,7 @@ const Layout = ({ children, className }) => {
         {/* ✅ Logo */}
         <Logo title={siteTitle} />
 
-        {/* ✅ Navbar (gabungan langsung di Layout.js) */}
+        {/* ✅ Navbar */}
         <div sx={layoutStyle.nav}>
           {/* Search versi mobile */}
           <div sx={{ display: ["flex", "flex", "flex", "none"] }}>
@@ -56,10 +55,9 @@ const Layout = ({ children, className }) => {
           </nav>
         </div>
 
-        {/* ✅ Bagian kanan (Search, Theme, WA) */}
+        {/* ✅ Bagian kanan (Search + WA, tanpa Theme) */}
         <div sx={layoutStyle.appearance}>
           <Search searchIndex={siteSearchIndex.index} />
-          <Theme />
 
           <a
             href="https://wa.me/6281234567890"

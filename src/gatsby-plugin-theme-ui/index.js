@@ -1,16 +1,16 @@
 import defaultColors from "../util/default-colors.json"
-import darkColors from "../util/dark-theme-colors.json"
 import { lightness } from "@theme-ui/color"
+
 const theme = {
   colors: {
     ...defaultColors,
-    text: "#000",
-    background: "#fff",
-    primary: "#0047AB",
-    accent: "#fff",
-    muted: "rgba(0, 0, 0, 0.7)",
-    cardBg: "#fff",
-    borderColor: "#0047AB",
+    text: "#000",                // teks hitam
+    background: "#fff",          // background putih
+    primary: "#0047AB",          // biru utama
+    accent: "#fff",              // aksen putih
+    muted: "rgba(0, 0, 0, 0.7)", // teks abu
+    cardBg: "#fff",              // background card putih
+    borderColor: "#0047AB",      // border biru
     labelText: "#777",
     inputBorder: "#aaa",
     inputBackground: "#fff",
@@ -19,26 +19,6 @@ const theme = {
     buttonColor: lightness("siteColor", 0.9),
     buttonHoverBg: lightness("siteColor", 0.4),
     buttonHoverColor: lightness("siteColor", 0.8),
-    modes: {
-      dark: {
-        text: "#f5f5f5",
-        background: "#111",
-        primary: "#252525",
-        accent: "#0047AB",
-        muted: "rgba(255, 255, 255, 0.7)",
-        cardBg: "#252525",
-        borderColor: "#888",
-        labelText: "#777",
-        inputBorder: "#777",
-        inputBackground: "#333",
-        socialIcons: lightness("siteColor", 0.5),
-        socialIconsHover: lightness("siteColor", 0.9),
-        buttonColor: lightness("siteColor", 0.7),
-        buttonHoverBg: lightness("siteColor", 0.3),
-        buttonHoverColor: lightness("siteColor", 0.9),
-        ...darkColors,
-      },
-    },
   },
   links: {
     postLink: {

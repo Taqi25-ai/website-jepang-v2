@@ -42,3 +42,8 @@ Jangan anggap mereka tidak empati—mereka hanya mengekspresikannya secara berbe
 Thinking introvert tidak suka terburu-buru. Mereka ingin memahami semua variabel terlebih dahulu.
 Jika kamu ingin mereka setuju dengan sesuatu, beri waktu untuk mereka mempertimbangkannya secara rasional.
 
+Kesimpulan
+
+Pola pikir thinking introvert mungkin tidak mudah dipahami secara instan, tapi ketika kamu belajar masuk ke cara mereka melihat dunia, kamu akan menemukan pemikiran yang dalam, terstruktur, dan sangat rasional.
+
+Jika kamu memberi mereka ruang dan pengertian, kamu bisa menjalin hubungan yang sangat kuat—karena di balik sikap tenang mereka, ada pemikiran yang selalu berjalan dan hati yang (meski tersembunyi) tetap peduli.

@@ -10,7 +10,7 @@ featuredImage: /assets/tugasartikelthinkingintrovert.jpg
 
 #### Bagaimana Cara Memahami Pola Pikir Thinking Introvert
 
-Memahami pola pikir seorang thinking introvert membutuhkan empati, kesabaran, dan sedikit usaha untuk melihat dunia dari sudut pandang yang lebih sunyi namun penuh logika. Berikut adalah beberapa cara praktis dan mendalam untuk memahami pola pikir mereka
+Memahami pola pikir seorang thinking introvert membutuhkan empati, kesabaran, dan sedikit usaha untuk melihat dunia dari sudut pandang yang lebih sunyi namun penuh logika. Berikut adalah beberapa cara praktis dan mendalam untuk memahami pola pikir mereka.
 
 #### 1. Pahami bahwa mereka berpikir dulu, bicara 
 

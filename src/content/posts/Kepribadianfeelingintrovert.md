@@ -2,7 +2,7 @@
 template: blog-post
 title: Kepribadian Feeling Introvert 
 slug: /feeling introvert
-date: 2025-09-10 12:46
+date: 2025-09-11 12:46
 description: Bagaimana mengatasi marah pada anak dengan kepribadian feeling introvert
 featuredImage: /assets/feelingintrovert.jpg
 ---

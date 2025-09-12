@@ -1,10 +1,10 @@
 ---
 template: blog-post
-title: Pola pikir thinking introvert
-slug: /thinking introvert
-date: 2025-09-10 12:46
-description: Cara Memahami Pola Pikir Thinking Introvert
-featuredImage: /assets/tugasartikelthinkingintrovert.jpg
+title: Kepribadian Feeling Introvert 
+slug: /feeling introvert
+date: 2025-09-11 12:46
+description: Bagaimana mengatasi marah pada anak dengan kepribadian feeling introvert
+featuredImage: /assets/feelingintrovert.jpg
 ---
 
 

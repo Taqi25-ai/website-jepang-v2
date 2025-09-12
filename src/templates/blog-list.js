@@ -2,14 +2,14 @@
 import { jsx } from "theme-ui"
 import React from "react"
 import { Link, graphql } from "gatsby"
-import { RiArrowRightLine, RiArrowLeftLine, RiUnderline } from "react-icons/ri"
+import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import { FiUnderline } from "react-icons/fi"
 
 const PostCard = ({ data }) => {
   const { frontmatter, excerpt } = data
   const image = frontmatter.featuredImage?.childImageSharp?.gatsbyImageData
+  const fallbackImage = frontmatter.featuredImage?.publicURL
 
   return (
     <article
@@ -27,7 +27,7 @@ const PostCard = ({ data }) => {
         overflow: "hidden",
       }}
     >
-      {image && (
+      {(image || fallbackImage) && (
         <Link to={frontmatter.slug} sx={{ overflow: "hidden", display: "block" }}>
           <div
             sx={{
@@ -38,7 +38,7 @@ const PostCard = ({ data }) => {
             }}
           >
             <img
-              src={image.images.fallback.src}
+              src={image?.images?.fallback?.src || fallbackImage}
               alt={frontmatter.title}
               loading="lazy"
               sx={{
@@ -57,6 +57,7 @@ const PostCard = ({ data }) => {
           </div>
         </Link>
       )}
+
       <div sx={{ p: 3, flexGrow: 1, display: "flex", flexDirection: "column" }}>
         <Link
           to={frontmatter.slug}
@@ -255,7 +256,6 @@ const BlogIndex = ({ data, pageContext }) => {
           mb: 5,
           mt: 4,
           color: "#FFD529",
-          textDecoration: "RiUnderline",
         }}
       >
         Blog
@@ -271,7 +271,7 @@ const BlogIndex = ({ data, pageContext }) => {
       >
         {posts}
       </div>
-      <Pagination
+           <Pagination
         isFirst={isFirst}
         isLast={isLast}
         prevPage={prevPage}
@@ -306,6 +306,7 @@ export const blogListQuery = graphql`
               childImageSharp {
                 gatsbyImageData(layout: CONSTRAINED, width: 345, height: 260)
               }
+              publicURL
             }
           }
         }
@@ -313,3 +314,4 @@ export const blogListQuery = graphql`
     }
   }
 `
+

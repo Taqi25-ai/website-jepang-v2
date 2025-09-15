@@ -1,10 +1,10 @@
 ---
 template: blog-post
-title: Pola Pikir Feeling Introvert 
+title: Pola Pikir Thinking Introvert 
 slug: /thinking introvert
 date: 2025-09-11 12:46
 description: Cara Memahami Pola Pikir Thinking Introvert
-featuredImage: /assets/think1.png
+featuredImage: /assets/thinkingintrovert2.jpg
 ---
 
 

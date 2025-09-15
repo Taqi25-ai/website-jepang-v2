@@ -3,7 +3,7 @@ title: Energi Positif Extrovert
 template: blog-post
 date: 2025-09-15 11:16
 slug: /EnergiExtrovert
-featuredImage: /assets/ekstrovert2.jpg
+featuredImage: /assets/exrovert3.jpg
 description: Energi Positif Extrovert Dalam Interaksi Sosial
 ---
 

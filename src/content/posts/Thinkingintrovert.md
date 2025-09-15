@@ -1,10 +1,10 @@
 ---
 template: blog-post
-title: Kepribadian Feeling Introvert 
-slug: /feeling introvert
+title: Pola Pikir Feeling Introvert 
+slug: /thinking introvert
 date: 2025-09-11 12:46
-description: Bagaimana mengatasi marah pada anak dengan kepribadian feeling introvert
-featuredImage: /assets/feelingintrovert.jpg
+description: Cara Memahami Pola Pikir Thinking Introvert
+featuredImage: /assets/think1.png
 ---
 
 

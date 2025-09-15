@@ -2,13 +2,13 @@
 template: blog-post
 title: Kepribadian Feeling Introvert 
 slug: /feeling introvert
-date: 2025-09-11 12:46
+date: 2025-09-10 12:46
 description: Bagaimana mengatasi marah pada anak dengan kepribadian feeling introvert
 featuredImage: /assets/feelingintrovert.jpg
 ---
 
 
-### Cara Tepat Mengelola Amarah Pada Anak Dengan Kepekaan Emosional Dan Sifat Introvert
+#### Cara Tepat Mengelola Amarah Pada Anak Dengan Kepekaan Emosional Dan Sifat Introvert
 
 Setiap anak memiliki cara unik dalam mengekspresikan emosinya, termasuk saat marah. Anak yang memiliki kepribadian feeling introvert seringkali kesulitan mengekspresikan kemarahannya secara langsung. Biasanya, mereka menyimpan emosi dalam hati dan memilih waktu sendiri daripada meledakkan kemarahan secara tiba-tiba. Namun, jika tidak ditangani dengan bijak, kemarahan yang terpendam ini bisa memengaruhi kesehatan emosional mereka.
 

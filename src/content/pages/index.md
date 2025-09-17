@@ -1,11 +1,11 @@
 ---
 template: index-page
 slug: /
-title: Apa Itu STIFIn?
+title: Berani Ambil Langkah Pertama
 tagline: ""
-featuredImage: /assets/apaitustifinn.png
+featuredImage: /assets/beraniambil.png
 cta:
   ctaText: See more
   ctaLink: /about
 ---
-Apa itu STIFIn – STIFIn merupakan sebuah konsep yang digunakan untuk mengidentifikasi mesin kecerdasan manusia berdasarkan sistem operasi otak yang dominan dan dapat diketahui dengan memindai sidik jari. Metode STIFIn tersusun dari teori-teori psikologi, neuroscience, dan ilmu sumber daya manusia yang......
+Jelang bisa jadi awal perubahan hidupmu....

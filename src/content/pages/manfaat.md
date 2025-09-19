@@ -1,37 +1,31 @@
 ---
 template: about-page
 slug: /manfaat
-title: ✨ Manfaat Tes STIFIn 
+title: ✨ Manfaat Bekerja Di Jepang
 
 ---
 
-![manfaat](/assets/manfaatstif.png)
+![](/assets/MANFAAT.png)
 
 
  
 
-### 🔎 Pemahaman Diri  
-> - **Mengenali potensi** karakter dan kepribadian diri  
-> - **Meningkatkan rasa percaya diri** terhadap kemampuan yang dimiliki  
-> - Membantu lebih fokus pada **kelebihan dan kehebatan diri**  
+### 1. Lingkungan Memadai 
+> Pekerja Techno Shoku & Tokutei ginou akan mendapatkan hak dan kewajiban yang sama dengan staf lokal. 
 
-### 📚 Pendidikan & Belajar  
-> - **Meningkatkan motivasi belajar** dan semangat bertumbuh  
-> - Menentukan **jurusan sekolah/kuliah** sesuai potensi  
-> - Mengoptimalkan potensi bakat yang akan dikembangkan  
 
-### 👨‍👩‍👧 Hubungan & Keluarga  
-> - Menentukan **pasangan yang ideal** untuk keluarga bahagia  
-> - Membentuk pola **harmonis** antar anggota keluarga/organisasi  
-> - **Membangun komunikasi** yang tepat di lingkungan diri  
 
-### 💼 Karir & Bisnis  
-> - Menentukan **karir/profesi** sesuai potensi diri  
-> - Menentukan **bisnis dan rekan bisnis** yang tepat  
-> - Mengaplikasikan potensi di berbagai **bidang karir**  
+### 2. Gaji Relatif Lebih Tinggi 
+> Standar gaji di jepang relatif lebih tinggi dibandingkan rata-rata gaji pekerja di Indonesia. Rata-rata upah minimum pekerja di jepang berkisar antara 15 hingga 25 juta per bulan untuk entry level. 
+  
 
-### 🌍 Sosial & Lingkungan  
-> - Meningkatkan **pola komunikasi** terhadap lingkungan  
-> - Bertindak lebih **bijaksana** dalam merespon orang lain  
-> - Bisa **berkolaborasi** dan saling melengkapi potensi  
-> - Membantu **pengambilan keputusan** yang tepat dan prioritas  
+### 3. Mengasah Skill Berbahasa Jepang 
+> Tinggal dan bersosalisasi langsung dengan orang lokal membuat kalian lebih mudah mengingat bahasa di negara tersebut. manfaatkanlah kesempatan kerja sekaligus untuk mengasah kemampuan bahasa Jepang.
+
+### 4. Tingkat Keamanan
+> Salah satu alasan orang asing memilih jepang sebagai lokasi bekerja adalah karena tingkat keamanannya yang tinggi. Jepang di kenal dunia sebagai negara yang aman.
+### 5. Infrastruktur Memadai 
+> Jepang adalah negara memiliki infrastruktur yang baik, sistem kesehatan yang terjamin, pendidikan yang berkualias, dan transportasi yang efesien adalah sebagian dari faktor-faktor yang mendukung kualitas hidup masyarakat Jepang.
+
+### 6. Pesona 4 Musim
+> Jepang di kenal dengan indahnya bunga Sakura, salju dna warna warni dedaunan di musim gugur. Kamu bisa memanfaatkan kesempatan bekerja sambil menikmati suasana 4 musim di jepang.

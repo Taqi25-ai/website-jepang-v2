@@ -36,7 +36,7 @@ const PostMaker = ({ data }) => (
     },
   }}
 >
-  See more
+  See more``
   <span className="icon -right">
     <RiArrowRightSLine />
   </span>

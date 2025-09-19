@@ -5,7 +5,7 @@ title: Berani Ambil Langkah Pertama
 tagline: ""
 featuredImage: /assets/beraniambil.png
 cta:
-  ctaText: See more
-  ctaLink: /about
+  ctaText: Daftar Sekarang
+  ctaLink: https://wa.me/6281285234904
 ---
 Jelang bisa jadi awal perubahan hidupmu....

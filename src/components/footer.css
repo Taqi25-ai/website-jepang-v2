@@ -1,6 +1,6 @@
 .footer-curved {
   /* background: linear-gradient(135deg, #FFD529 0%, #0056D2 100%); */
-background:  #0056D2 ;
+background:  #Bc002d ;
   color: white;
   padding: 2rem 1rem;
   text-align: center;
@@ -11,7 +11,7 @@ background:  #0056D2 ;
   box-shadow: 0 -5px 15px rgba(0,0,0,0.3);
 }
 .footer-link {
-  color: #ffd700;
+  color: hsl(0, 0%, 100%);
   text-decoration: none;
   font-weight: 1200;
   font-size: 33px;

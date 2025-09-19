@@ -6,7 +6,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <a href="/" className="logo">STIFIn</a>
+      <a href="/" className="logo">Areta Informatics College</a>
 
       <div className="menu-toggle" onClick={() => setIsOpen(!isOpen)}>
         ☰

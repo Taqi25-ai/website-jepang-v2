@@ -6,7 +6,7 @@ title: JADWAL KEGIATAN
 ---
 
 
-![Jadwal](/assets/jadwal.jpg)
+![](/assets/jadwal.jpg)
 
 
 <!-- ![layanan](/assets/layanan2.jpg) -->

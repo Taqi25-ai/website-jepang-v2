@@ -2,7 +2,6 @@
 import { jsx } from "theme-ui"
 import { graphql } from "gatsby"
 import { RiSendPlane2Line } from "react-icons/ri"
-
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
@@ -36,7 +35,7 @@ const Contact = ({ data }) => {
       />
 
       <div sx={contactStyles.container}>
-        {/* Card 1: Info Section */}
+        {/* --- Info Section --- */}
         <div sx={contactStyles.infoSection}>
           <h1 sx={contactStyles.title}>{frontmatter.title}</h1>
           <div
@@ -58,12 +57,43 @@ const Contact = ({ data }) => {
               </a>
             </p>
             <p>
-              <strong>Address:</strong> Jakarta, Indonesia
+              <strong>Address:</strong>{" "}
+              <a
+                href="https://www.google.com/maps/place/Jakarta,+Indonesia"
+                target="_blank"
+                rel="noopener noreferrer"
+                sx={contactStyles.link}
+              >
+                Jakarta, Indonesia
+              </a>
             </p>
+
+            {/* Gambar peta kantor yang bisa diklik */}
+            <a
+              href="https://maps.app.goo.gl/kuDVybwFCo7GB5fd8"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="/assets/peta.png"
+                alt="Lokasi kantor di Jakarta"
+                sx={{
+                  mt: 3,
+                  borderRadius: 8,
+                  boxShadow: "0 6px 15px rgba(0,0,0,0.2)",
+                  maxWidth: "100%",
+                  cursor: "pointer",
+                  transition: "transform 0.2s ease",
+                  "&:hover": {
+                    transform: "scale(1.02)",
+                  },
+                }}
+              />
+            </a>
           </div>
         </div>
 
-        {/* Card 2: Form Section */}
+        {/* --- Form Section --- */}
         <form
           className="contact-form"
           action="/thanks"
@@ -145,7 +175,7 @@ const Contact = ({ data }) => {
 
 export default Contact
 
-// Styles
+// ===== Styles =====
 const contactStyles = {
   contactPage: {
     bg: "#f8f8f8",
@@ -153,13 +183,12 @@ const contactStyles = {
     py: [5, 6],
     px: 3,
     fontFamily: "'Poppins', sans-serif",
-    color: "#fff",
   },
   container: {
     maxWidth: 800,
     mx: "auto",
     display: "flex",
-    flexDirection: "column", // Atas-bawah
+    flexDirection: "column",
     gap: 5,
   },
   infoSection: {
@@ -167,6 +196,7 @@ const contactStyles = {
     p: [3, 4],
     borderRadius: 10,
     boxShadow: "0 8px 20px rgba(0,0,0,0.1)",
+    color: "#fff",
   },
   title: {
     fontSize: [4, 5],
@@ -212,18 +242,19 @@ const contactStyles = {
   },
   label: {
     mb: 1,
-    fontWeight: "600",
-    fontSize: 1,
-    color: "#ffffffff",
+    fontWeight: "700",
+    fontSize: "16px",
+    color: "#ffffff !important",
     letterSpacing: "0.02em",
   },
   input: {
-    border: "1.5px solid #ffffffff",
+    border: "1.5px solid #fff",
     borderRadius: 6,
     px: 2,
     py: 2,
     fontSize: 1,
     fontWeight: "500",
+    backgroundColor: "#fff",
     "&::placeholder": {
       color: "#999",
       fontStyle: "italic",
@@ -232,11 +263,10 @@ const contactStyles = {
       borderColor: "#222",
       outline: "none",
       boxShadow: "0 0 5px #222",
-      backgroundColor: "#fff",
     },
   },
   textarea: {
-    border: "1.5px solid #ffffffff",
+    border: "1.5px solid #fff",
     borderRadius: 6,
     px: 2,
     py: 2,
@@ -244,6 +274,7 @@ const contactStyles = {
     fontWeight: "500",
     resize: "vertical",
     minHeight: 100,
+    backgroundColor: "#fff",
     "&::placeholder": {
       color: "#999",
       fontStyle: "italic",
@@ -252,7 +283,6 @@ const contactStyles = {
       borderColor: "#222",
       outline: "none",
       boxShadow: "0 0 5px #222",
-      backgroundColor: "#fff",
     },
   },
   submitWrapper: {

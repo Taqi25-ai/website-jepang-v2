@@ -4,4 +4,4 @@ slug: /visi
 title: Visi dan Misi
 
 ---
-![visi & misi](/assets/visimisi.png)
+![](/assets/visimisi.png)

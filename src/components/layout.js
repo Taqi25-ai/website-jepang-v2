@@ -64,7 +64,7 @@ const Layout = ({ children, className }) => {
               <li><Link to="/visi" activeClassName="active" onClick={handleLinkClick}>Vision & Mision</Link></li>
               <li><Link to="/manfaat" activeClassName="active" onClick={handleLinkClick}>Benefit</Link></li>
               <li><Link to="/keunggulan" activeClassName="active" onClick={handleLinkClick}>Cost</Link></li>
-              <li><Link to="/layanan" activeClassName="active" onClick={handleLinkClick}>Layanan</Link></li>
+              <li><Link to="/layanan" activeClassName="active" onClick={handleLinkClick}>Schedule</Link></li>
               <li><Link to="/blog" activeClassName="active" onClick={handleLinkClick}>Blog</Link></li>
               <li><Link to="/contact" activeClassName="active" onClick={handleLinkClick}>Contact</Link></li>
             </ul>

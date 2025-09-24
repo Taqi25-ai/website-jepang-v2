@@ -1,12 +1,12 @@
 ---
 template: about-page
 slug: /layanan
-title: LAYANAN KAMI
+title: JADWAL KEGIATAN 
 
 ---
 
 
-![layanan](/assets/layanan1.jpg)
+![Jadwal](/assets/jadwal.jpg)
 
 
-![layanan](/assets/layanan2.jpg)
+<!-- ![layanan](/assets/layanan2.jpg) -->

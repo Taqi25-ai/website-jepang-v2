@@ -34,7 +34,9 @@ const Contact = ({ data }) => {
         title={frontmatter.title}
         description={`${frontmatter.title} - ${site.siteMetadata.title}`}
       />
+
       <div sx={contactStyles.container}>
+        {/* Card 1: Info Section */}
         <div sx={contactStyles.infoSection}>
           <h1 sx={contactStyles.title}>{frontmatter.title}</h1>
           <div
@@ -45,7 +47,7 @@ const Contact = ({ data }) => {
           <div sx={contactStyles.contactDetails}>
             <p>
               <strong>Email:</strong>{" "}
-              <a href="mailto:satrioareta55@gmail.com" sx={contactStyles.link}>
+              <a href="mailto:anonim@gmail.com" sx={contactStyles.link}>
                 anonim@gmail.com
               </a>
             </p>
@@ -60,6 +62,8 @@ const Contact = ({ data }) => {
             </p>
           </div>
         </div>
+
+        {/* Card 2: Form Section */}
         <form
           className="contact-form"
           action="/thanks"
@@ -70,6 +74,7 @@ const Contact = ({ data }) => {
           sx={contactStyles.form}
         >
           <input type="hidden" name="form-name" value="contact" />
+
           <p sx={contactStyles.field}>
             <label htmlFor="name" sx={contactStyles.label}>
               Name
@@ -83,6 +88,7 @@ const Contact = ({ data }) => {
               sx={contactStyles.input}
             />
           </p>
+
           <p sx={contactStyles.field}>
             <label htmlFor="email" sx={contactStyles.label}>
               Email
@@ -96,6 +102,7 @@ const Contact = ({ data }) => {
               sx={contactStyles.input}
             />
           </p>
+
           <p sx={contactStyles.field}>
             <label htmlFor="subject" sx={contactStyles.label}>
               Subject
@@ -109,6 +116,7 @@ const Contact = ({ data }) => {
               sx={contactStyles.input}
             />
           </p>
+
           <p sx={contactStyles.field}>
             <label htmlFor="message" sx={contactStyles.label}>
               Message
@@ -122,6 +130,7 @@ const Contact = ({ data }) => {
               sx={contactStyles.textarea}
             />
           </p>
+
           <p sx={contactStyles.submitWrapper}>
             <button type="submit" sx={contactStyles.button}>
               Send Message{" "}
@@ -136,22 +145,22 @@ const Contact = ({ data }) => {
 
 export default Contact
 
+// Styles
 const contactStyles = {
   contactPage: {
-    bg: "#ffffffff",
+    bg: "#f8f8f8",
     minHeight: "100vh",
     py: [5, 6],
     px: 3,
     fontFamily: "'Poppins', sans-serif",
-    color: "#ffffffff",
+    color: "#fff",
   },
   container: {
     maxWidth: 800,
     mx: "auto",
-    display: "grid",
-    gridTemplateColumns: ["1fr", "1fr 1fr"],
+    display: "flex",
+    flexDirection: "column", // Atas-bawah
     gap: 5,
-    alignItems: "start",
   },
   infoSection: {
     bg: "#BC002D",
@@ -163,7 +172,7 @@ const contactStyles = {
     fontSize: [4, 5],
     fontWeight: "800",
     mb: 2,
-    color: "#ffffffff",
+    color: "#fff",
     letterSpacing: "0.03em",
     textTransform: "uppercase",
   },
@@ -171,18 +180,16 @@ const contactStyles = {
     fontSize: 1,
     lineHeight: 1.6,
     mb: 3,
-    color: "#ffffffff",
+    color: "#fff",
   },
   contactDetails: {
     fontSize: 1,
-    color: "#ffffffff",
+    color: "#fff",
     lineHeight: 1.5,
-    p: {
-      mb: 2,
-    },
+    p: { mb: 2 },
   },
   link: {
-    color: "#ffffffff",
+    color: "#fff",
     textDecoration: "none",
     fontWeight: "600",
     "&:hover": {
@@ -211,7 +218,7 @@ const contactStyles = {
     letterSpacing: "0.02em",
   },
   input: {
-    border: "1.5px solid #ccc",
+    border: "1.5px solid #ffffffff",
     borderRadius: 6,
     px: 2,
     py: 2,
@@ -229,7 +236,7 @@ const contactStyles = {
     },
   },
   textarea: {
-    border: "1.5px solid #ccc",
+    border: "1.5px solid #ffffffff",
     borderRadius: 6,
     px: 2,
     py: 2,
@@ -252,7 +259,7 @@ const contactStyles = {
     textAlign: "right",
   },
   button: {
-    bg: "#ffffffff",
+    bg: "#fff",
     color: "#BC002D",
     fontWeight: "800",
     fontSize: 2,

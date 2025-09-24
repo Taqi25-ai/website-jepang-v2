@@ -1,20 +1,29 @@
 ---
 template: about-page
 slug: /keunggulan
-title: 3 Keunggulan Tes STIFIn
+title: Perkiraan Pengeluaran Pribadi Untuk Ke Berangkatan Ke Jepang.
 
 ---
-![keunggulan](/assets/keungulan.png)
+![pengeluaran](/assets/perkiraan.png)
 
-#### berikut adalah 3 alasan kenapa kita semakin yakin dengan tes STIFIn
 
-**SIMPEL**
-> Dari miliaran manusia di dunia, hasil tes STIFIn mengelompokkan kita hanya ke dalam 5 mesin kecerdasan dan 9 kepribadian genetik. Mudah dipahami dan tidak rumit.
+- 🛂 Pasport Elektronik (maksimal 5 tahun) ‎ ‎ ‎ : Rp 650.000
+- 🛂 Pasport Elektronik (maksimal 10 tahun)‎ ‎ : Rp 950.000
 
-**AKURAT**
-> STIFIn memiliki tingkat validitas (Paper & Pencil) dan reliabilitas (Fingerprint) yang tinggi, mencapai akurasi hingga 95% berdasarkan hasil uji coba.
-Cukup tes sekali seumur hidup, karena hasilnya bersifat genetik dan tidak akan berubah.
 
-**APLIKATIF**
-> STIFIn unggul dalam pendekatan Multi-Angle Field, artinya hasil tesnya bisa diterapkan di berbagai aspek kehidupan, seperti:
-Belajar, Mengajar, Parenting, Bisnis, Profesi, Rumah Tangga, Hubungan Pasangan, Kesehatan, dan masih banyak lagi.
+- 💳 Biaya Aplikasi Visa ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ : Rp 500.000
+
+
+- 📝 Ujian JLPT N3 (Untuk Technoshoku)‎ ‎ ‎ ‎ ‎ ‎ ‎  : Rp 220.000
+- 📝 Ujian JLPT N4 (Untuk Tokutei Ginou)‎ ‎ ‎ ‎ ‎ ‎  : Rp 180.000
+
+
+- ✔️ Ujian Specified Skilled Worker(SSW)  ‎ ‎ ‎ ‎ ‎ : Rp 500.000
+
+
+- ✈️ Tiket Pesawat ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ : Rp 5.000.000
+
+
+- 💸 Uang Saku Sampai Gajian ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎: Rp 6.000.000 
+
+<b>TOTAL PERKIRAAN BIAYA ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ : Rp 13.170.000

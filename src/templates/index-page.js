@@ -58,7 +58,7 @@ const HomePage = ({ data }) => {
 
   return (
     <Layout>
-      <Seo title="STIFIn - Tes Kepribadian & Potensi Diri" />
+      <Seo title="Hashiwa Japanese Academy" />
 
       {/* HERO */}
       <section

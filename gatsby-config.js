@@ -82,8 +82,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `STIFIn`,
-        short_name: `STIFIn`,
+        name: `Areta Informatis College`,
+        short_name: `Areta Informatics College`,
         start_url: `/`,
         background_color: `#FAD02F`,
         theme_color: `#25B05D`,

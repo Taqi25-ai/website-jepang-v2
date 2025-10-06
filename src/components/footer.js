@@ -7,7 +7,7 @@ const Footer = () => (
     <p>
       
       <Link to="/" className="footer-link">
-       <b>Areta Informatic college</b> 
+       <b>Areta Informatics college</b> 
       </Link>
       
     </p>
